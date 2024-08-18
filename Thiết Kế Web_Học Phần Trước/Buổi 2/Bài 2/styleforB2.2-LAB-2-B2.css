@@ -1,0 +1,144 @@
+.body{
+    margin:-30px;
+    padding:0;
+    background-color: rgb(240, 240, 240);
+}
+
+.box0{
+    padding:0;
+    margin:auto;
+    max-width:1200px;
+    max-height:100%;
+    background-color:#1D2A35;
+    padding-right:20px;
+    padding-left:30px;
+}
+
+h1{
+    padding-top: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:28pt;
+    color:white;
+    padding-left:10px;
+}
+
+h2{
+    padding-top: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:20pt;
+    color:white;
+    padding-left:10px;
+}
+
+hr{
+    margin:auto;
+    max-width: 1200px;
+    opacity:0.2;
+    margin-top:10px;
+}
+
+.chu{
+    display: inline;
+    color:white;
+    padding-left:10px;
+}
+
+.anh{
+    width:1000px;
+    border-radius: 7px;
+    height:200px;
+    padding-left:10px;
+}
+
+.box1{
+    background-color:rgb(240, 240, 240,0.3);
+    margin:auto;
+    max-width: 1300px;
+    padding-left:10px;
+    padding-right:10px;
+    height:265px;
+    border-radius: 7px;
+}
+
+.box2{
+    background-color:#15202B;
+    margin:auto;
+    max-width:1200px;
+    padding-left:10px;
+    
+}
+
+
+.mauchu1{
+    display: inline;
+    color:#FF998B;
+    padding-left:10px;
+}
+
+.mauchu2{
+    display: inline;
+    color:#C5A5C5;
+    padding-left:10px;
+}
+
+.mauchu3{
+    display: inline;
+    color:#88C98B;
+    padding-left:10px;
+}
+
+a:link, a:visited {
+    background-color:#059862;
+    color: white;
+    padding: 15px 20px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 7px;
+    font-size:14pt;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  a:hover, a:active {
+    background-color: #086e49;
+    border-radius:7px;
+    font-size:14pt;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h3{
+    color:white;
+    font-size:14pt;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  }
+
+  li{
+    color:white;
+  }
+
+  #marked{
+    display:inline;
+    color:#FF9896;
+    background-color: #313D47;
+    padding-left:5px;
+    padding-right:5px;
+  }
+  .o{
+    padding-bottom: 15px;
+  }
+  .box3{
+    background-color:#FFF4A3;
+    max-width:1200px;
+    max-height:100%;
+    padding:0;
+    margin:-20px;
+    padding-right:20px;
+    padding-left:30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dongcuoi{
+    font-size:14pt;
+    padding-top: 15px;
+    padding-bottom:15px;
+  }

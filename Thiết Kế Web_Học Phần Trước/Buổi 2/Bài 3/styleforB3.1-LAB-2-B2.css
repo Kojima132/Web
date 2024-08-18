@@ -1,0 +1,11 @@
+.box1{
+    background-color:#D3D3D3;
+    max-width: 1000px;
+}
+.p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:5px;
+    border-width: 4px;
+    border-style:solid;
+}

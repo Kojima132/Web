@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="icon" type="image/x-icon" href="../File Ảnh/favicon (1).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleforB4-LAB-4-B4.css">
+    <title>Agency - Kalium WordPress Theme</title>
+    <style>
+        #popup-trigger {
+            display: none;
+        }
+
+        #popup-label {
+            cursor: pointer;
+            color: #000000;
+            display: inline-block;
+        }
+
+        #popup-trigger:checked ~ #popup {
+            display: flex;
+        }
+
+        #popup {
+            display: none;
+            position: fixed;
+            margin: auto;
+            top: 25px;
+            left: 20px;
+            width: 97%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7); /* Màu nền với độ trong suốt */
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #popup-content {
+            padding: 20px;
+            min-width: 80%; /* Độ rộng tối đa của nội dung popup */
+            text-align: center;
+        }
+
+        #close-popup {
+            cursor: pointer;
+            display: inline-block;
+            
+        }
+
+        body {
+            margin: 0;
+        }
+
+        input[type=text] {
+        width: 20%;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+        font-size: 25pt;
+        background-color: rgba(0, 0, 0, 0);
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        }
+
+            .trove{
+                width:fit-content;
+                position: fixed;
+                transform: translateY(40%);
+                right: 0;
+            }
+
+            .trove>a{
+                display: block;
+                background-color: bisque;
+                padding: 10px;
+                margin-top: 10px;
+                color: black;
+            }
+            
+            .trove>a:hover{
+                background-color: rgb(248, 182, 101);
+            }
+    </style>
+</head>
+<body>
+    <div class="trove">
+        <a href="BaiTapLon-Trang Work.html"> Về trang WORK</a>
+        <a href="BaiTapLon-Trang Mô Phỏng B1.html"> Về trang mô phỏng</a>
+    </div>
+    <div class="div">
+        <header style="z-index: 1;">
+            <div style="width: 80%;height: fit-content;padding-top:70px;">
+                <div style="float:left;">
+                <a href="https://demo.kaliumtheme.com/agency"><img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/06/Kalium-Theme-Icon.png" alt="EROR" class="logo"></a>
+                </div>
+                <div style="float:right;">
+                    <input type="checkbox" id="popup-trigger">
+                    <label for="popup-trigger" id="popup-label"><i class="fas fa-bars" style="font-size: 20pt;color:black"></i></label>
+                    <div id="popup">
+                        <div id="popup-content">
+                            <div style="position: relative;top:-10px;left:500px;overflow: hidden;">
+                                <label for="popup-trigger" id="close-popup"><i class="fa-solid fa-xmark" style="font-size: 25pt;color:rgb(255, 255, 255);"></i></label>
+                            </div>
+                            <ul class="ul">
+                                <li class="li"><a href="https://demo.kaliumtheme.com/agency/" style="border-bottom: 2px solid white;font-size: 25pt;color: white;font-family: segoe ui;">Home</a></li>
+                                <li class="li"><a href="https://demo.kaliumtheme.com/agency/portfolio/" class="chu">Portfolio</a></li>
+                                <li class="li"><a href="https://demo.kaliumtheme.com/agency/team/" class="chu">Team</a></li>
+                                <li class="li"><a href="https://demo.kaliumtheme.com/agency/services-2/" class="chu">Services</a></li>
+                                <li class="li"><a href="https://demo.kaliumtheme.com/agency/blog/" class="chu">Blog</a></li>
+                                <li class="li"><a href="https://demo.kaliumtheme.com/agency/contact/" class="chu">Contact</a></li>
+                                <li class="li"><a href="https://1.envato.market/KYm9a?_gl=1*1lbqxm9*_ga*MTUxMzQ4MDk2NS4xNzAzMjU3Mjg1*_ga_3BDNKMYTNG*MTcwMzU3NTQxMi4xMy4xLjE3MDM1NzU5MjkuMC4wLjA." class="chu">Buy Now!</a></li>
+                                <li class="li">
+                                    <form>
+                                    <input type="text" name="search" placeholder="Search...">
+                                    </form>
+                                </li>
+                            </ul>
+                            <hr style="opacity: 0.5;position: relative;top:30px;">
+                            <div style="margin-top:50px;">
+                                <div style="float:left; width: fit-content;">
+                                    <div class="banquyen">
+                                        © Copyright 2023 | <a href="https://kaliumtheme.com/" class="banquyen">Kalium Theme</a> by <a href="https://laborator.co/" class="banquyen">Laborator</a>
+                                    </div>
+                                </div>
+                                <div style="float: right;">
+                                    <div class="icon">
+                                        <a href="https://www.facebook.com/laboratorcreative"><i class="fa-brands fa-facebook" style="font-size: 11pt;"></i></a>    
+                                    </div>
+                                    <div class="icon">
+                                        <a href="https://twitter.com/thelaborator"><i class="fa-brands fa-x-twitter" style="font-size: 11pt;"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="https://www.instagram.com/laboratorcreative"><i class="fa-brands fa-instagram" style="font-size: 11pt;"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="https://www.youtube.com/user/LaboratorCreative/"><i class="fa-brands fa-youtube" style="font-size: 11pt;"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="https://1.envato.market/KYm9a?_gl=1*gkne40*_ga*MTUxMzQ4MDk2NS4xNzAzMjU3Mjg1*_ga_3BDNKMYTNG*MTcwMzU5MDY0My4xNy4wLjE3MDM1OTA2NDMuMC4wLjA."><i class="fa-solid fa-plus" style="font-size: 11pt;"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="khaungu">
+                <span>Clear thinking at the wrong moment can <br>
+                stifle</span>
+                <span id="id">creativity_</span>
+            </div>
+            
+            <ul class="ul2">
+                <li class="li2"><a href="https://demo.kaliumtheme.com/agency/portfolio/" style="border-bottom: 2px solid rgb(0, 0, 0);font-size: 12pt;color: rgb(0, 0, 0);font-family: segoe ui;">All</a></li>
+                <li class="li2"><a href="https://demo.kaliumtheme.com/agency/portfolio-category/branding/" class="chu2">Brading</a></li>
+                <li class="li2"><a href="https://demo.kaliumtheme.com/agency/portfolio-category/digital-art/" class="chu2">Digital Art</a></li>
+                <li class="li2"><a href="https://demo.kaliumtheme.com/agency/portfolio-category/photography/" class="chu2">Photography</a></li>
+                <li class="li2"><a href="https://demo.kaliumtheme.com/agency/portfolio-category/print/" class="chu2">Print</a></li>
+            </ul>
+            <div style="width:83%; margin-top: -100px;">
+                <div class="row">
+                    <div class="column">
+                        <div class="bo">
+                            <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/05/adestra-c-300x200.jpg"  alt="EROR" style="width:100%" class="lop1">
+                            <div class="lop2"></div>
+                            <div class="lop3">
+                                <i class="fa-regular fa-heart" style="font-size: 20pt;"></i>
+                            </div>
+                            <div class="lop4">
+                                <span class="chuvafontchu" style="font-weight: 600;">ADESTRA</span><br>
+                                <span class="chuvafontchu" style="color:#7A797A;font-size: 11pt;">Brading, Print</span>
+                            </div>
+                            <a href="https://demo.kaliumtheme.com/agency/portfolio/adestra/" class="lop5"></a>
+                        </div>
+                        <div class="bo">
+                            <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2015/03/cloud-inc-c-300x200.jpg" alt="EROR" style="width:100%">
+                            <div class="lop2"></div>
+                            <div class="lop3">
+                                <i class="fa-regular fa-heart" style="font-size: 20pt;"></i>
+                            </div>
+                            <div class="lop4">
+                                <span class="chuvafontchu" style="font-weight: 600;">CLOUD INC</span><br>
+                                <span class="chuvafontchu" style="color:#7A797A;font-size: 11pt;">Print</span>
+                            </div>
+                            <a href="https://demo.kaliumtheme.com/agency/portfolio/cloud-inc/" class="lop5"></a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="bo2">
+                            <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/04/desk-concept-c-468x468.jpg" alt="EROR" style="width:100%; transform: translateY(125px);">
+                            <div class="lop2a"></div>
+                            <div class="lop3a">
+                                <i class="fa-regular fa-heart" style="font-size: 20pt;"></i>
+                            </div>
+                            <div class="lop4a">
+                                <span class="chuvafontchu" style="font-weight: 600;">DESK CONCEPT</span><br>
+                                <span class="chuvafontchu" style="color:#7A797A;font-size: 11pt;">Photography</span>
+                            </div>
+                            <a href="https://demo.kaliumtheme.com/agency/portfolio/desk-concept/" class="lop5a"></a>
+                        </div>
+                        <div class="bo">
+                            <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/04/capricho-c-300x182.jpg" alt="EROR" style="width:100%;">
+                            <div class="lop2"></div>
+                            <div class="lop3">
+                                <i class="fa-regular fa-heart" style="font-size: 20pt;"></i>
+                            </div>
+                            <div class="lop4">
+                                <span class="chuvafontchu" style="font-weight: 600;">CAPRICHO</span><br>
+                                <span class="chuvafontchu" style="color:#7A797A;font-size: 11pt;">Digital Art</span>
+                            </div>
+                            <a href="https://demo.kaliumtheme.com/agency/portfolio/capricho/" class="lop5"></a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="bo">
+                            <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/04/multi-color-c-300x199.jpg" alt="EROR" style="width:100%">
+                            <div class="lop2"></div>
+                            <div class="lop3">
+                                <i class="fa-regular fa-heart" style="font-size: 20pt;"></i>
+                            </div>
+                            <div class="lop4">
+                                <span class="chuvafontchu" style="font-weight: 600;">MULTI COLOR</span><br>
+                                <span class="chuvafontchu" style="color:#7A797A;font-size: 11pt;">Digital Art</span>
+                            </div>
+                            <a href="https://demo.kaliumtheme.com/agency/portfolio/multi-color/" class="lop5"></a>
+                        </div>
+                        <div class="bo">
+                            <img src="https://demo.kaliumtheme.com/agency/wp-content/uploads/2021/04/ethics-for-design-c-300x200.jpg" alt="EROR" style="width:100%">
+                            <div class="lop2"></div>
+                            <div class="lop3">
+                                <i class="fa-regular fa-heart" style="font-size: 20pt;"></i>
+                            </div>
+                            <div class="lop4">
+                                <span class="chuvafontchu" style="font-weight: 600;">ETHICS FOR DESIGN</span><br>
+                                <span class="chuvafontchu" style="color:#7A797A;font-size: 11pt;">Print</span>
+                            </div>
+                            <a href="https://demo.kaliumtheme.com/agency/portfolio/ethics-for-design/" class="lop5"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 100px;margin-left: 150px;padding-bottom: 15px;">
+                <span style="font-weight: 600;font-size: 20pt;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">CLIENTS.</span><br>
+                <span style="padding-bottom: 30px;font-size:11pt;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                    Behind our customers see a project, behind every project opportunity.<br>
+                    These are some with whom we had the pleasure of working. You want to be the next?
+                </span>
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

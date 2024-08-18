@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width device-width, initial-scale:1.0">
+        <title>CSS Syntax</title>
+        <link rel="icon" type="image/x-icon" href="../File Ảnh/favicon (1).ico">
+        <link rel="stylesheet" href="styleforB2.2-LAB-2-B2.css">
+        <style>
+            *{
+               margin:0;
+               padding:0;
+               text-decoration: none;
+           }
+           .trove{
+               width:fit-content;
+               position: fixed;
+               transform: translateY(-50%);
+               right: 0;
+           }
+
+           .trove>a{
+               display: block;
+               background-color: bisque;
+               padding: 10px;
+               margin-top: 10px;
+               color: black;
+           }
+           
+           .trove>a:hover{
+               background-color: rgb(248, 182, 101);
+           }
+
+       </style>
+    </head>
+    <body class="body">
+        <div class="box0">
+            <h1>CSS Syntax</h1>
+            <hr><br>
+            <div class="trove">
+                <a href="BaiTapLon-Trang Work.html"> Về trang WORK</a>
+                <a href="BaiTapLon-Trang Mô Phỏng B1.html"> Về trang mô phỏng</a>
+            </div>
+            <div class="chu">
+                A CSS rule consists of a selector and a declaration block.
+            </div>
+            <hr>
+            <h2>CSS Syntax</h2>
+            <img src="https://www.w3schools.com/css/img_selector.gif" alt="EROR" class="anh">
+            <div>
+                <p class="chu">
+                <br>
+                The selector points to the HTML element you want to style.<br>
+                <br>
+                The declaration block contains one or more declarations separated by semicolons.<br>
+                <br>
+                Each declaration includes a CSS property name and a value, separated by a colon.<br>
+                <br>
+                Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.<br>
+                <br>
+                </p>
+            </div>
+            <div class="box1">
+                <div>
+                <h2>Example</h2>
+                </div>
+                <div class="chu">
+                    A CSS rule consists of a selector and a declaration block.
+                </div>
+                <div class="box2">
+                    <p>
+                       <p class="mauchu1">p</p><p class="chu">{</p><br>
+                            <p class="mauchu2">color</p><p class="chu">:</p><p class="mauchu3">red</p><p class="chu">;</p><br>
+                            <p class="mauchu2">text-align</p><p class="chu">:</p><p class="mauchu3">center</p><p class="chu">;</p><br>
+                       <p class="chu">}</p><br>
+                    </p>
+                </div>
+                <div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_syntax1">Try it Yourself <small>>></small></a> 
+                </div>
+            </div>
+            <div>
+                <h3>Example Explained</h3>
+                <div>
+                    <ul>
+                        <li><p id="marked">p</p> is a selector in CSS (it points to the HTML element you want to style: <code style="color:white;">&lt;p&gt;</code>).</li>
+                        <li><p id="marked">color</p> is a property, and <p id="marked">red</p> is the property value</li>
+                        <li class="o"><p id="marked">text-align</p> is a property, and <p id="marked">center</p> is the property value</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="box3">
+            <P class="dongcuoi">You will learn much more about CSS selectors and CSS properties in the next chapters!</P>
+        </div>
+    </body>
+</html>

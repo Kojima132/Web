@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width device-width, initial-scale=1.0">
+        <title>HTML Tutorial</title>
+        <link rel="icon" type="image/x-icon" href="../File Ảnh/favicon (1).ico">
+        <style>
+             *{
+                margin:0;
+                padding:0;
+                text-decoration: none;
+            }
+            .trove{
+                width:fit-content;
+                position: fixed;
+                transform: translateY(-50%);
+                right: 0;
+            }
+
+            .trove>a{
+                display: block;
+                background-color: bisque;
+                padding: 10px;
+                margin-top: 10px;
+                color: black;
+            }
+            
+            .trove>a:hover{
+                background-color: rgb(248, 182, 101);
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1><center><strong style="color:crimson;">HTML Tutorial</strong></center></h1>
+        <hr>
+        <div class="trove">
+            <a href="BaiTapLon-Trang Work.html"> Về trang WORK</a>
+            <a href="BaiTapLon-Trang Mô Phỏng B1.html"> Về trang mô phỏng</a>
+        </div>
+        <ol>
+        <b><li>HTML Basic:</li></b>
+        <p style="margin-bottom: 5px;">Trong chương học này ta sẽ học về một số điều cơ bản về HTML:</p>
+        <ul>
+            <li>Tất cả tài liệu về HTML đều được khai báo là <code style="color:crimson;">&lt;!DOCTYPE html&gt;</code>.</li>
+            <li>Bản thân các tài liệu HTML đều được bắt đầu là <code style="color:crimson;">&lt;html&gt;</code> và được kết thúc là <code style="color:crimson;">&lt;/html&gt;</code>.</li>
+            <li>Phần hiển thị của một tài liệu HTML sẽ nằm giữa <code style="color:crimson;">&lt;body&gt;</code> và <code style="color:crimson;">&lt;/body&gt;</code>.</li>
+        </ul>
+        <p>Ví dụ:</p>
+        <img src="../File Ảnh/Screenshot 2023-11-24 210257.png" alt="EROR!"> 
+        <p>Về việc khai báo <code style="color:crimson;">&lt;!DOCTYPE&gt;</code> sẽ cho thấy được một vài điều như sau:<br>
+                - Thể được loại tài liệu đó là tài liệu gì và giúp cho trình duyệt có thể hiển thị một cách chính xác.<br>
+                - Nó chỉ được xuất hiện một lần, ở đầu trang (trước bất kỳ thẻ HTML nào).<br>
+                - Khai báo <code style="color:crimson;">&lt;!DOCTYPE&gt;</code> không phân biệt chữ hoa chữ thường.<br>
+            Về các tiêu đề (Headings) trong HTML:<br>
+                - Các tiêu đề trong HTML được xác định bằng thẻ <code style="color:crimson;">&lt;h1&gt;</code> cho đến <code style="color:crimson;">&lt;h6&gt;</code>.<br>
+                - <code style="color:crimson;">&lt;h1&gt;</code>xác định tiêu đề quan trọng nhất. <code style="color:crimson;">&lt;h6&gt;</code> xác định tiêu đề ít quan trọng nhất. Điều này sẽ thể hiện rõ nhất là ở kích thước giữa các tiêu đề (Trong đó cỡ chữ của tiêu đề h1 sẽ là to nhất, còn cỡ chữ của tiêu đề h6 sẽ là nhỏ nhất).<br>
+                - Ví dụ:<br>
+                    <img src="https://carly.com.vn/media/1131/the-heading-la-gi.png?width=500&height=399.8559077809798" alt="EROR"><br>
+            Về việc viết một đoạn văn trong HTML:<br>
+                -   Các đoạn HTML được xác định bằng thẻ <code style="color:crimson;">&lt;p&gt;</code>, ví dụ:<br>
+                    <img src="../File Ảnh/Screenshot 2023-11-24 220957.png" alt="EROR"><br>
+            Về các đường liên kết (links) trong HTML:<br>
+                -  Các iên kết trong HTML được xác định bằng thẻ a<code style="color:crimson;">&lt;a&gt;</code>, ví dụ:<br>
+                    <img src="../File Ảnh/Screenshot 2023-11-24 221946.png" alt="EROR"><br>
+                    + Địa chỉ mà liên kết trỏ đến được xác định trong thuộc tính href.<br>
+                    + Các thuộc tính được sử dụng để cung cấp thông tin bổ sung về các phần tử HTML.<br>
+            Về chèn ảnh vào một file HTML:<br>
+                -  Hình ảnh HTML được xác định bằng thẻ <code style="color:crimson;">&lt;img&gt;</code>.<br>
+                -  Tệp nguồn (src), văn bản thay thế (alt), width (chiều rộng) và height(chiều cao) được cung cấp dưới dạng thuộc tính. Ví dụ:<br>
+                    <img src="../File Ảnh/Screenshot 2023-11-24 223955.png" alt="EROR"><br>
+                    Phần code<br>
+                    <img src="../File Ảnh/Screenshot 2023-11-24 224007.png" alt="EROR"><br>
+                    Phần ảnh<br>
+                    <br>
+            Về cách xem mã nguồn HTML:<br>
+                - Bạn đã bao giờ nhìn thấy một trang Web và tự hỏi "Này! Họ làm điều đó như thế nào?"<br>
+                - Xem mã nguồn HTML: Nhấp vào CTRL + U trong trang HTML hoặc nhấp chuột phải vào trang và chọn "Xem nguồn trang". Thao tác này sẽ mở một tab mới chứa mã nguồn HTML của trang.<br>
+                - Kiểm tra một phần tử HTML: Nhấp chuột phải vào một phần tử (hoặc một vùng trống) và chọn "Kiểm tra" để xem những phần tử nào được tạo thành (bạn sẽ thấy cả HTML và CSS). Bạn cũng có thể chỉnh sửa HTML hoặc CSS nhanh chóng trong bảng Thành phần hoặc Kiểu mở ra.<br>
+        </p>
+        <b><li>HTML Elements:</li></b>
+        <p style="margin-bottom: 5px;">Trong chương học này ta sẽ học về một số phần tử của HTML:<Br>
+        * Cấu trúc của một phần tử trong HTML:<br>
+            <code style="color:crimson;">&lt;Thẻ bắt đầu&gt;</code> Nội dung <code style="color:crimson;">&lt;Thẻ kết thúc&gt;</code><br>
+            Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-24 231727.png" alt="EROR"><br>
+        * Các phần tử lồng nhau:<br>
+        - Các phần tử HTML có thể được lồng vào nhau (điều này có nghĩa là các phần tử có thể chứa các phần tử khác).<br>
+        - Tất cả các tài liệu HTML bao gồm các phần tử HTML lồng nhau.<br>
+        Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 091639.png" alt="EROR"><br>
+        Giải thích:<br>
+            Thẻ <code style="color:crimson;">&lt;!DOCTYPE&gt;</code> là phần tử gốc đóng vai trò là xác định toàn bộ tài liệu HTML.<br>
+            Phần tử <code style="color:crimson;">&lt;html&gt;</code> lồng các phần tử <code style="color:crimson;">&lt;head&gt;</code>,<code style="color:crimson">&lt;body&gt;</code>. Trong phần <code style="color:crimson">&lt;head&gt;</code> thì lồng phần tử <code style="color:crimson">&lt;title&gt;</code>.<br>
+            Phần tử <code style="color:crimson;">&lt;body&gt;</code> thì lồng các phần tử <code style="color:crimson;">&lt;h1&gt;</code>,<code style="color:crimson">&lt;p&gt;</code>.<br>
+        * Không bao giờ được bỏ các thẻ kết thúc:<br>
+        - Trong một số trường hợp nhất định, việc viết các phần tử mà chỉ có thẻ đầu mà không có thẻ kết thúc vẫn sẽ hiển thị một cách chính xác trên các trình duyệt, ví dụ:<br> 
+            <img src="../File Ảnh/Screenshot 2023-11-25 095625.png" alt="EROR"><br>
+            Như các bạn có thể thấy, trong phần tử h1 chỉ có thẻ bắt đầu là thẻ <code style="color:crimson;">&lt;h1&gt;</code> chứ không có thẻ kết thúc <code style="color:crimson">&lt;/h1&gt;</code>. Và phần tử p trong đó cũng chỉ thẻ bắt đầu là thẻ <code style="color:crimson">&lt;p&gt;</code> chứ không có thẻ kết thúc.<br>
+            Tuy vậy khi hiển thị trên các trình duyệt thì nó sẽ vẫn hiển thị đúng các nội dung trong các phần tử đó, và hình ảnh dưới đây chính là kết quả khi hiển thị trên trình đuyệt.<br>
+            <img src="../File Ảnh/Screenshot (308).png" alt="EROR" width="1000"><br>
+            <strong style="background-color:rgb(255, 208, 71);">Lưu ý:<br>Tuy kết quả là vậy, thì ta cũng không nên bỏ qua các thẻ kết thúc. Bởi trong các trường hợp nhất định, thì file HTML sẽ bị lỗi và không hiển thị được ở trên trình duyệt.</strong><br>
+        * Phần tử rỗng trong HTML:<br>
+        - Các phần tử HTML không có nội dung được gọi là các phần tử trống.<br>
+        - Thẻ <code style="color:crimson;">&lt;br&gt;</code> được dùng để ngắt dòng và là phần tử trống không có thẻ đóng, ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 110443.png" alt="EROR"><br>
+          Và đây là kết quả của ví dụ đó:<br>
+            <img src="../File Ảnh/Screenshot (309).png" alt="EROR" width="1000"><br>
+        * Các thẻ của các phần tử sẽ không phân biệt chữ hoa và chữ thường:<br>
+        - Thẻ HTML không phân biệt chữ hoa chữ thường: <code style="color:crimson;">&lt;P</code>có nghĩa giống như <code style="color:crimson;">&lt;p&gt;</code>.<br>
+        - Nhưng nên sử dụng dạng chữ thường.<br>
+        </p>
+        <b><li>HTML Attributes:</li></b>
+        <p>* Một số điều cơ bản về thuộc tính trong HTML:<br>
+            - Tất cả các phần tử HTML đều có thể có thuộc tính.<br>
+            - Thuộc tính cung cấp thông tin bổ sung về các phần tử.<br>
+            - Các thuộc tính luôn được sử dụng trong thẻ bắt đầu.<br>
+            - Các thuộc tính thường có cặp tên/giá trị như: tên thuộc tính="giá trị của thuộc tính".<br>
+           * Thuộc tính hrel:<br>
+            - Thẻ <code style="color:crimson;">&lt;a&gt;</code> là thẻ được sử dụng để xác định một siêu liên kểt. Trong đó thuộc tính hrel được sử dụng để trỏ đến URL mà đường link liên kết tới.<br>
+            Ví dụ:
+            <code style="color:crimson;">&lt;a hrel="https://www.youtube.com/watch?v=pHu2G1NL6gE&t=2s&ab_channel=BGMmaker">Đây là link.&lt;/a&gt;</code><br>
+           * Thuộc tính scr:<br>
+            - Thẻ <code style="color:crimson;">&lt;img&gt;</code> được sử dụng để nhúng hình ảnh vào trang HTML. Thuộc src tính chỉ định đường dẫn đến hình ảnh sẽ được hiển thị.<br>
+            - Có hai cách để chỉ định URL trong src thuộc tính:
+                + URL tuyệt đối - Liên kết tới hình ảnh bên ngoài được lưu trữ trên một trang web khác. Ví dụ: src="https://www.w3schools.com/images/img_girl.jpg" .<br>
+                + Lưu ý: Hình ảnh bên ngoài có thể có bản quyền. Nếu bạn không được phép sử dụng nó, bạn có thể vi phạm luật bản quyền. Ngoài ra, bạn không thể kiểm soát hình ảnh bên ngoài; nó có thể đột ngột bị loại bỏ hoặc thay đổi.<br>
+                + URL tương đối - Liên kết tới hình ảnh được lưu trữ trong trang web. Ở đây, URL không bao gồm tên miền. Nếu URL bắt đầu không có dấu gạch chéo, nó sẽ liên quan đến trang hiện tại. Ví dụ: src="img_girl.jpg". Nếu URL bắt đầu bằng dấu gạch chéo thì nó sẽ liên quan đến tên miền. Ví dụ: src="/images/img_girl.jpg".<br>
+                + Mẹo: Tốt nhất bạn nên sử dụng URL tương đối. Chúng sẽ không bị hỏng nếu bạn thay đổi tên miền.<br>
+           * Thuộc tính chiều rộng và chiều cao trong thẻ img:<br>
+           - Thẻ <code style="color:crimson;">&lt;img&gt;</code>cũng phải chứa các thuộc tính width và height để xác định chiều rộng và chiều cao của hình ảnh (tính bằng pixel).<br>
+           - Ví dụ: <br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 134352.png" alt="EROR" width="650" height="200"><br>
+            Kết quả khi hiện lên trên trình duyệt:<br>
+            <img src="../File Ảnh/Screenshot (310).png" alt="EROR" width="750" height="450"><br>
+           * Thuộc tính alt trong thẻ img:<br>
+           - Thuộc tính bắt buộc alt cho thẻ <code style="color:crimson;">&lt;img&gt;</code> sử dụng như là một văn bản thay thế cho hình ảnh nếu hình ảnh vì lý do nào đó không thể hiển thị. Điều này có thể do kết nối chậm hoặc lỗi thuộc tính src hoặc do người dùng sử dụng trình đọc màn hình.<br>
+           * Thuộc tính style trong các thẻ của html:<br>
+           - Thuộc tính style được sử dụng để thêm kiểu cho một thành phần, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.
+            Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 135943.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (311).png" alt="EROR" width="750" height="450"><br>
+            * Thuộc tính lang trong HTML:<br>
+            - Bạn phải luôn bao gồm thuộc tính lang bên trong thẻ <code style="color:crimson;">&lt;html&gt;</code> để khai báo ngôn ngữ của trang Web. Điều này nhằm hỗ trợ các công cụ tìm kiếm và trình duyệt.<br>
+            - Ví dụ sau chỉ định tiếng Anh là ngôn ngữ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 141630.png" alt="EROR"><br>
+            - Mã quốc gia cũng có thể được thêm vào mã ngôn ngữ trong thuộc tính lang.<br>
+            - Ví dụ sau chỉ định tiếng Anh là ngôn ngữ và Hoa Kỳ là quốc gia:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 142016.png" alt="EROR"><br>
+            * Thuộc tính tiêu đề trong HTML:<br>
+            - Thuộc tính title xác định một số thông tin bổ sung về một phần tử.<br>
+            - Giá trị của thuộc tính tiêu đề sẽ được hiển thị dưới dạng chú giải công cụ khi bạn di chuột qua phần tử, ví dụ <br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 144451.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (312).png" alt="EROR" width="750" height="450"><br>
+        </p>
+        <b><li>HTML Headings:</li></b>
+         <P>* Tiêu đề HTML là tiêu đề hoặc phụ đề mà bạn muốn hiển thị trên trang web.<br>
+            - Ví dụ:<br>
+             <img src="https://carly.com.vn/media/1131/the-heading-la-gi.png?width=500&height=399.8559077809798" alt="EROR"><br>
+            * Tiêu đề HTML được xác định bằng thẻ <code style="color:crimson;">&lt;h1&gt;</code> đến  thẻ <code style="color:crimson;">&lt;h6&gt;</code>.<br>
+            - <code style="color:crimson;">&lt;h1&gt;</code> xác định tiêu đề quan trọng nhất. <code style="color:crimson;">&lt;h6&gt;</code> xác định tiêu đề ít quan trọng nhất.<br>
+            - Tiêu đề đóng một vai trò rất quan trọng đối với một trang web bởi vì công cụ tìm kiếm sử dụng các tiêu đề để lập chỉ mục cấu trúc và nội dung trang web của bạn.<br>
+            - Người dùng thường lướt qua một trang theo tiêu đề của nó. Điều quan trọng là sử dụng các tiêu đề để hiển thị cấu trúc tài liệu.<br>
+            - <code style="color:crimson;">&lt;h1&gt;</code> nên sử dụng làm các tiêu đề chính, tiếp theo là <code style="color:crimson;">&lt;h2&gt;</code>, các tiêu đề ít quan trọng hơn <code style="color:crimson;">&lt;h3&gt;</code>, v.v.
+            * Làm cho tiêu đề có kích cỡ lớn hơn hoặc nhỏ hơn:<br>
+            - Mỗi tiêu đề trong HTML có kích thước mặc định. Tuy nhiên, bạn có thể chỉ định kích thước cho bất kỳ tiêu đề nào bằng thuộc tính font-size trong CSS thông qua thuộc tính style trong HTML:<br>
+            Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 151152.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (315).png" alt="EROR" width="750" height="450"><br>
+        </P>
+        <b><li>HTML Paragraphs:</li></b>   
+        <p>* Đoạn văn luôn bắt đầu trên một dòng mới và thường là một khối văn bản.<br>
+            - Phần tử HTML <code style="color:crimson;">&lt;p&gt;</code> xác định một đoạn văn.<br>
+            - Một đoạn văn luôn bắt đầu trên một dòng mới và trình duyệt sẽ tự động thêm một số khoảng trắng (lề) trước và sau một đoạn văn.<br>
+            - Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-24 220957.png" alt="EROR"><br>
+           * Về cách hiển thị một đoạn văn bản trong HTML:<br>
+            - Với HTML, bạn không thể thay đổi cách hiển thị bằng cách thêm dấu cách hoặc dòng thừa trong mã HTML của mình.<br>
+            - Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 153207.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (316).png" alt="EROR" width="750" height="450"><br>
+            * Tạo điểm ngắt ngang theo nội dung, chủ đề trong HTML:<br>
+            - Thẻ <code style="color:crimson;">&lt;hr&gt;</code> xác định làm điểm ngắt theo chủ đề trong trang HTML và thường được hiển thị dưới dạng một đường thẳng. Thẻ này được sử dụng để phân tách nội dung và tạo ra sự thay đổi giữa các trang trong HTML. Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 154321.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (317).png" alt="EROR" width="750" height="450"><br>
+            * Ngắt dòng trong HTML:<br>
+            - Phần tử HTML <code style="color:crimson;">&lt;br&gt;</code> xác định ngắt dòng.<br>
+            - Sử dụng <code style="color:crimson;">&lt;br&gt;</code> nếu bạn muốn ngắt dòng (một dòng mới) mà không bắt đầu một đoạn mới. Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 110443.png" alt="EROR"><br>
+            Và đây là kết quả của ví dụ đó:<br>
+            <img src="../File Ảnh/Screenshot (309).png" alt="EROR" width="750" height="450"><br>
+            - Thẻ <code style="color:crimson;">&lt;br&gt;</code> là thẻ trống, nghĩa là thẻ không có thẻ kết thúc.
+            * Văn bản được định dạng sẵn trong HTML:<br>
+            - Phần tử <code style="color:crimson;">&lt;pre&gt;</code> trong HTML được dùng để xác định văn bản được định dạng sẵn.<br>
+            - Văn bản bên trong một phần tử <code style="color:crimson;">&lt;pre&gt;</code>  được hiển thị bằng phông chữ có chiều rộng cố định (thường là Courier) và nó giữ nguyên cả dấu cách và ngắt dòng, ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 155602.png" alt="EROR"><br>
+            Và đây là kết quả của ví dụ đó:<br>
+            <img src="../File Ảnh/Screenshot (318).png" alt="EROR" width="750" height="450"><br>
+        </p>
+        <b><li>HTML Styles:</li></b> 
+            <p>* Thuộc tính style trong HTML được sử dụng để thêm kiểu cho một phần tử, chẳng hạn như màu sắc, phông chữ, kích thước, v.v.<br>
+            * Thuộc tính style trong HTML có cú pháp như sau: <code style="color:crimson;">&lt;tagname style="property:value;"&gt;</code>...<code style="color:crimson">&lt;/tagname&gt;</code><br>
+                + Với property- thuộc tính là thuộc tính CSS. Với Value- giá trị là một giá trị CSS.<br>
+            * Tạo màu nền:<br>
+            - Thuộc tính CSS background-color xác định màu nền cho phần tử HTML. Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 165404.png" alt="EROR"><br>
+            Và đây là kết quả của ví dụ đó:<br>
+            <img src="../File Ảnh/Screenshot (319).png" alt="EROR" width="750" height="450"><br>
+            * Đổi màu cho văn bản:<br>
+            - Ta có thể đổi màu cho văn bản thông qua thuộc tính color có trong CSS, ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 170028.png" alt="EROR"><br>
+            Và đây là kết quả của ví dụ đó:<br>
+            <img src="../File Ảnh/Screenshot (320).png" alt="EROR" width="750" height="450"><br>
+            * Thay đổi phông chữ cho văn bản:<br>
+            - Ta có thể thay đổi phông chữ thông qua thuộc tính font-family trong CSS, ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 170941.png" alt="EROR"><br>
+            Và đây là kết quả của ví dụ đó:<br>
+            <img src="../File Ảnh/Screenshot (321).png" alt="EROR" width="750" height="450"><br>
+            * Thay đổi cỡ chữ cho văn bản:<br>
+            - Ta có thể thay đổi cỡ chữ thông qua thuộc tính font-size trong CSS, ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 171453.png" alt="EROR"><br>
+            Và đây là kết quả của ví dụ đó:<br>
+            <img src="../File Ảnh/Screenshot (323).png" alt="EROR" width="750" height="450"><br>
+            * Căn chỉnh cho văn bản:<br>
+            - Ta có thể căn trỉnh văn bản thông qua thuộc tính text-align trong CSS, ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 172357.png" alt="EROR"><br>
+            Và đây là kết quả của ví dụ đó:<br>
+            <img src="../File Ảnh/Screenshot (324).png" alt="EROR" width="750" height="450"><br>
+            </p>
+        <b><li>HTML Text Formatting:</li></b> 
+            <p>
+            * Các phần tử định dạng được thiết kế để hiển thị các loại văn bản đặc biệt trong HTML:<br>
+            - <code style="color:crimson;">&lt;b&gt;</code>- Chữ in đậm <br>
+            - <code style="color:crimson;">&lt;strong&gt;</code>- Văn bản quan trọng <br>
+            - <code style="color:crimson;">&lt;i&gt;</code>- Văn bản in nghiêng <br>
+            - <code style="color:crimson;">&lt;em&gt;</code>- Đoạn văn bản được nhấn mạnh <br>
+            - <code style="color:crimson;">&lt;mark&gt;</code>- Văn bản được đánh dấu <br>
+            - <code style="color:crimson;">&lt;small&gt;</code>- Văn bản nhỏ hơn <br>
+            - <code style="color:crimson;">&lt;del&gt;</code>- Văn bản đã xóa <br>
+            - <code style="color:crimson;">&lt;ins&gt;</code>- Đã chèn văn bản <br>
+            - <code style="color:crimson;">&lt;sub&gt;</code>- Văn bản chỉ số dưới <br>
+            - <code style="color:crimson;">&lt;sup&gt;</code>- Văn bản chỉ số trên <br>
+            * Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 192238.png" alt="EROR"><br>
+            * Kết quả của ví dụ:<br>
+            <img src="../File Ảnh/Screenshot (325).png" alt="EROR" width="750" height="450"><br>
+            </p>
+        <b><li>HTML Quotation and Citation Elements:</li></b>
+            <p>
+            * Các phần tử dùng để trích dẫn và các trích dẫn trong HTML:<br>
+            - Phần tử <code style="color:crimson;">&lt;blockquote&gt;</code> dùng để xác định phần trích dẫn từ một nguồn khác. Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 194950.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (326).png" alt="EROR" width="750" height="450"><br>
+            - Dùng thẻ <code style="color:crimson;">&lt;q&gt;</code> để xác định các trích dẫn ngắn. Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 195524.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (327).png" alt="EROR" width="750" height="450"><br>
+            - Dùng thẻ <code style="color:crimson;">&lt;abbr&gt;</code> để xác định các chữ viết tắt. Đánh dấu các chữ viết tắt có thể cung cấp thông tin hữu ích cho trình duyệt, hệ thống dịch thuật và công cụ tìm kiếm. Mẹo: Sử dụng thuộc tính tiêu đề chung để hiển thị mô tả cho từ viết tắt/viết tắt khi bạn di chuột qua phần tử. Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 200401.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 200338.png" alt="EROR" width="750" height="450"><br>
+            Khi mà ta di chuột vào từ được viết tắt thì ta sẽ biết được phiên bản đầy đủ của từ đó.
+            - Dùng thẻ <code style="color:crimson;">&lt;address&gt;</code> để để lại thông tin liên hệ (Địa chỉ,số điện thoại,...) cho công việc.Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 201651.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (329).png" alt="EROR" width="750" height="450"><br>  
+            Giải thích ví dụ: Văn bản trong phần tử <code style="color:crimson;">&lt;address&gt;</code> thường hiển thị ở dạng in nghiêng và trình duyệt sẽ luôn thêm dấu ngắt dòng trước và sau phần tử <code style="color:crimson;">&lt;/address&gt;</code>.<br>
+            - Dùng thẻ <code style="color:crimson;">&lt;cite&gt;</code> để trích dẫn tiêu đề cho công việc.Thẻ HTML <code style="color:crimson;">&lt;cite&gt;</code> xác định tiêu đề của một tác phẩm sáng tạo (ví dụ: một cuốn sách, một bài thơ, một bài hát, một bộ phim, một bức tranh, một tác phẩm điêu khắc, v.v.).<br>
+             + Lưu ý: Tên người không phải là tên tác phẩm. Văn bản trong phần tử <code style="color:crimson;">&lt;cite&gt;</code> thường hiển thị ở dạng in nghiêng .<br> 
+            Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 203046.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (330).png" alt="EROR" width="750" height="450"><br>
+            - Dùng thẻ <code style="color:crimson;">&lt;bdo&gt;</code> để ghi đè văn bản hiện tại. Ví dụ:<br>
+            Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 203850.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (331).png" alt="EROR" width="750" height="450"><br>  
+            </p>
+        <b><li>HTML Comments:</li></b>    
+            <p>
+            * Cấu trúc của một câu comment trong HTML:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 205215.png" alt="EROR"><br>
+            * Vai trò của các commets trong HTML:<br>
+            - Bạn có thể đặt thông báo và lời nhắc trong các dòng mã HTML của mình thông qua các comments.<br>
+            - Bình luận có thể được sử dụng để ẩn nội dung.<br>    
+            </p>
+        <b><li>HTML Colors:</li></b>
+            <p>
+            * Trong HTML màu sắc có thể được chỉ định bằng cách sử dụng tên màu.<br>
+            * Màu nền, màu chữ, màu viền. Ví dụ:<br>
+            - Màu nền<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 165404.png" alt="EROR"><br>
+            Kết quả:
+            <img src="../File Ảnh/Screenshot (319).png" alt="EROR" width="750" height="450"><br>
+            - Màu chữ<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 170028.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (320).png" alt="EROR" width="750" height="450"><br>
+            - Màu viền<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 211836.png" alt="EROR"><br>
+            Kết quả:<br>
+            <img src="../File Ảnh/Screenshot (332).png" alt="EROR" width="750" height="450"><br>    
+            * Giá trị màu:<br>
+            - Trong HTML, màu sắc cũng có thể được chỉ định bằng giá trị RGB, giá trị HEX, giá trị HSL, giá trị RGBA và giá trị HSLA.<br>
+            + Ba phần tử <code style="color:crimson;">&lt;div&gt;</code> được đặt với các giá trị RGB, HEX và HSL để biểu diễn cho màu đỏ lần lượt là:rgb(255, 99, 71),#ff6347,hsl(9, 100%, 64%).<br>
+            + Hai phần tử <code style="color:crimson;">&lt;div&gt;</code> sau đây có màu nền được đặt với các giá trị RGBA và HSLA, thêm kênh Alpha vào màu (ở đây chúng tôi có độ trong suốt 50%):rgba(255, 99, 71, 0,5),hsla(9, 100%, 64%, 0,5)<br>
+            - Giá trị RGB và RGBA trong màu sắc:<br>
+            + Trong HTML, một màu có thể được chỉ định làm giá trị RGB bằng công thức sau:<br>
+            rgb ( đỏ, xanh lá cây , xanh dương )<br>
+            + Mỗi tham số (đỏ, lục và lam) xác định cường độ của màu với giá trị từ 0 đến 255.<br>
+            + Điều này có nghĩa là có 256 x 256 x 256 = 16777216 màu có thể có!<br>
+            + Ví dụ: rgb(255, 0, 0) được hiển thị dưới dạng màu đỏ, vì màu đỏ được đặt ở giá trị cao nhất (255) và hai giá trị còn lại (xanh lục và xanh lam) được đặt thành 0.<br>
+            + Một ví dụ khác, rgb(0, 255, 0) được hiển thị dưới dạng màu xanh lục, vì màu xanh lá cây được đặt ở giá trị cao nhất (255) và hai giá trị còn lại (đỏ và xanh lam) được đặt thành 0.<br>
+            + Để hiển thị màu đen, đặt tất cả tham số màu thành 0, như sau: rgb(0, 0, 0).<br>
+            + Để hiển thị màu trắng, đặt tất cả tham số màu thành 255, như sau: rgb(255, 255, 255).<br>
+            + Giá trị màu RGBA là phần mở rộng của giá trị màu RGB với kênh Alpha - kênh này chỉ định độ mờ cho màu.<br>
+            + Giá trị màu RGBA được chỉ định bằng:<br>
+            rgba( đỏ, lục , lam, alpha )<br>
+            + Tham số alpha là một số từ 0,0 (hoàn toàn trong suốt) đến 1,0 (hoàn toàn không trong suốt).<br>
+            + Các sắc thái của màu xám thường được xác định bằng cách sử dụng các giá trị bằng nhau cho cả ba tham số đỏ, lục và lam.<br>
+            - Giá trị HEX trong màu sắc:<br>
+            + Trong HTML, một màu có thể được chỉ định bằng giá trị thập lục phân ở dạng:<br>
+            #rrggbb <br>
+            Trong đó rr (đỏ), gg (xanh lục) và bb (xanh lam) là các giá trị thập lục phân từ 00 đến ff (giống như số thập phân 0-255).<br>
+            + Ví dụ: #ff0000 được hiển thị dưới dạng màu đỏ, vì màu đỏ được đặt ở giá trị cao nhất (ff) và hai giá trị còn lại (xanh lục và xanh lam) được đặt thành 00.<br>
+            + Một ví dụ khác, #00ff00 được hiển thị dưới dạng màu xanh lá cây, vì màu xanh lá cây được đặt ở giá trị cao nhất (ff) và hai giá trị còn lại (đỏ và xanh lam) được đặt thành 00.<br>
+            + Để hiển thị màu đen, đặt tất cả tham số màu thành 00, như sau: #000000.<br>
+            + Để hiển thị màu trắng, đặt tất cả tham số màu thành ff, như sau: #ffffff.<br>
+            + Các sắc thái của màu xám thường được xác định bằng cách sử dụng các giá trị bằng nhau cho cả ba tham số số đỏ, lục và lam (Ví dụ: #404040,#f8f8f8).<br>
+            - Giá trị HSL và HSLA trong màu sắc:<br>
+            +Trong HTML, một màu có thể được chỉ định bằng cách sử dụng màu sắc, độ bão hòa và độ sáng (HSL) ở dạng:<br>
+            hsl( màu sắc , độ bão hòa , độ sáng )<br>
+            Hue là một độ trên bánh xe màu từ 0 đến 360. 0 là đỏ, 120 là xanh lục và 240 là xanh lam.<br>
+            Độ bão hòa là một giá trị phần trăm. 0% có nghĩa là màu xám và 100% là màu đầy đủ.<br>
+            Độ sáng cũng là một giá trị phần trăm. 0% là màu đen và 100% là màu trắng.<br>
+            + Giá trị màu HSLA là phần mở rộng của giá trị màu HSL, với kênh Alpha - chỉ định độ mờ cho màu.<br>
+            + Giá trị màu HSLA được chỉ định bằng:<br>
+            hsla( màu sắc, độ bão hòa , độ sáng, alpha )<br>
+            Tham số alpha là một số từ 0,0 (hoàn toàn trong suốt) đến 1,0 (hoàn toàn không trong suốt).<br>
+            + Các sắc thái của màu xám thường được xác định bằng cách đặt màu sắc và độ bão hòa thành 0, đồng thời điều chỉnh độ sáng từ 0% đến 100% để có được sắc thái tối hơn/sáng hơn.<br>
+            </p>
+        <b><li>HTML Links:</li></b>
+            <p>* Liên kết HTML - Cú pháp:<br> 
+            - Thẻ HTML <code style="color:crimson;">&lt;a&gt;</code> dùng để xác định một siêu liên kết. Nó có cú pháp sau:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 215957.png" alt="EROR"><br>
+            - Thuộc tính quan trọng nhất của phần tử <code style="color:crimson;">&lt;a&gt;</code> là thuộc tính href, cho biết đích đến của liên kết.<br>
+            - Văn bản liên kết là phần mà người đọc sẽ nhìn thấy.<br>
+            - Nhấp vào văn bản liên kết sẽ đưa người đọc đến địa chỉ URL được chỉ định.<br>
+            - Ví dụ: <code style="color:crimson;">&lt;a hrel="https://www.youtube.com/watch?v=pHu2G1NL6gE&t=2s&ab_channel=BGMmaker">Đây là link.&lt;/a&gt;</code><br>
+            - Theo mặc định, các liên kết sẽ xuất hiện như sau trong tất cả các trình duyệt:<br>
+            + Một liên kết chưa được truy cập được gạch chân và có màu xanh lam.<br>
+            + Một liên kết đã truy cập được gạch chân và có màu tím.<br>
+            + Một liên kết đang hoạt động được gạch chân và có màu đỏ.<br>
+            * Liên kết HTML - Thuộc tính đích:<br>
+            - Theo mặc định, trang được liên kết sẽ được hiển thị trong cửa sổ trình duyệt hiện tại. Để thay đổi điều này, bạn phải chỉ định một mục tiêu khác cho liên kết.<br>
+            - Thuộc tính target chỉ định nơi mở tài liệu được liên kết.<br>
+            - Thuộc tính target có thể có một trong các giá trị sau:<br>
+            + _self- Mặc định. Mở tài liệu trong cùng cửa sổ/tab khi tài liệu được nhấp vào.<br>
+            + _blank- Mở tài liệu trong cửa sổ hoặc tab mới.<br>
+            + _parent- Mở tài liệu trong khung cha mẹ.<br>
+            + _top- Mở tài liệu ở chế độ toàn màn hình.<br>
+            Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 222409.png" alt="EROR"><br>
+            * URL tuyệt đối so với URL tương đối:<br>
+            - Cả hai ví dụ trên đều sử dụng URL tuyệt đối (địa chỉ web đầy đủ) trong thuộc tính href.<br>
+            - Liên kết cục bộ (liên kết đến một trang trong cùng một trang web) được chỉ định bằng URL tương đối (không có phần "https://www").<br>
+            * Liên kết HTML - Sử dụng hình ảnh làm liên kết:<br>
+            - Để sử dụng hình ảnh làm liên kết, chỉ cần đặt thẻ <code style="color:crimson;">&lt;img&gt;</code>  bên trong thẻ <code style="color:crimson;">&lt;a&gt;</code>, ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 224230.png" alt="EROR"><br>
+            * Liên kết đến một địa chỉ email:<br>
+            - Sử dụng mailto: bên trong thuộc tính href để tạo liên kết mở chương trình email của người dùng (để cho phép họ gửi email mới),ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 224646.png" alt="EROR"><br>
+            * Tiêu đề liên kết:<br>
+            - Thuộc tính title chỉ định thông tin bổ sung về một phần tử. Thông tin thường được hiển thị dưới dạng văn bản chú giải công cụ khi chuột di chuyển qua phần tử. Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 225255.png" alt="EROR"><br>
+            * Tạo dấu trang trong HTML:<br>
+            - Dấu trang có thể hữu ích nếu một trang web rất dài.<br>
+            - Để tạo dấu trang - trước tiên hãy tạo dấu trang rồi thêm liên kết vào dấu trang đó.<br>
+            - Khi nhấp vào liên kết, trang sẽ cuộn xuống hoặc cuộn lên vị trí có dấu trang.<br>
+            Ví dụ:<br>
+            <img src="../File Ảnh/Screenshot 2023-11-25 231116.png" alt="EROR" width="250px" height="500"><br>
+            </p>
+        <b><li>HTML Images:</li></b>
+            <p>
+                * Cú pháp hình ảnh HTML:<br>
+                - Thẻ HTML <code style="color:crimson;">&lt;img&gt;</code> được sử dụng để nhúng hình ảnh vào trang web.<br>
+                Hình ảnh không được chèn vào trang web về mặt kỹ thuật; hình ảnh được liên kết đến các trang web. Thẻ <code style="color:crimson;">&lt;img&gt;</code> tạo một không gian lưu giữ cho hình ảnh được tham chiếu.<br>
+                - Thẻ <code style="color:crimson;">&lt;img&gt;</code> trống, chỉ chứa các thuộc tính và không có thẻ đóng.<br>
+                - Thẻ <code style="color:crimson;">&lt;img&gt;</code> có hai thuộc tính bắt buộc:<br>
+                + src - Chỉ định đường dẫn đến hình ảnh.
+                + alt - Chỉ định văn bản thay thế cho hình ảnh khi ảnh bị lỗi hoặc không thể hiển thị.<br>
+                - Về cú pháp thì như sau:<br>
+                <img src="Screenshot 2023-11-25 233133.png" alt="EROR"><br>   
+                * Nên sử dụng width,height hay là style?<br>
+                - Các thuộc tính width, height, và style đều hợp lệ trong HTML. Tuy nhiên, chúng tôi khuyên bạn nên sử dụng thuộc tính style. Bởi nó sẽ ngăn các bảng định kiểu thay đổi kích thước của hình ảnh. Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-25 233616.png" alt="EROR" style="width:1200px;height:450px;"><br> 
+                * Hình ảnh trên Máy chủ/Trang web khác:<br>
+                - Một số trang web trỏ đến một hình ảnh trên một máy chủ khác. Để trỏ đến hình ảnh trên máy chủ khác, bạn phải chỉ định URL tuyệt đối (đầy đủ) trong thuộc tính src, ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-25 235127.png" alt="EROR" style="width:800px;height:200px;"><br> 
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (333).png" alt="EROR" style="width:800px;height:450px;"><br> 
+                * Sử dụng hình ảnh làm liên kết:<br>
+                - Để sử dụng hình ảnh làm liên kết, chỉ cần đặt thẻ <code style="color:crimson;">&lt;img&gt;</code>  bên trong thẻ <code style="color:crimson;">&lt;a&gt;</code>, ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-25 224230.png" alt="EROR"><br>
+                * Ảnh nổi:<br>
+                Sử dụng thuộc tính float trong CSS để cho hình ảnh nổi sang bên phải hoặc bên trái của văn bản, ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 082748.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (334).png" alt="EROR" style="width:750px;height:450px;"><br>
+                * Bản đồ hình ảnh HTML:<br>
+                - Thẻ HTML <code style="color:crimson;">&lt;map&gt;</code> xác định bản đồ hình ảnh. Bản đồ hình ảnh là một hình ảnh có các khu vực có thể nhấp vào. Các khu vực được xác định bằng một hoặc nhiều thẻ <code style="color:crimson;">&lt;area&gt;</code>.<br>
+                - Cách hoạt động: Ý tưởng đằng sau bản đồ hình ảnh là bạn có thể thực hiện các hành động khác nhau tùy thuộc vào vị trí bạn nhấp vào trong hình ảnh. Để tạo bản đồ hình ảnh, bạn cần có hình ảnh và một số mã HTML mô tả các khu vực có thể nhấp vào. Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 090453.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 090135.png" alt="EROR" style="width:750px;height:450px;"><br>
+                Giải thích: Phần được khoanh vùng chính là phần có thể kích chuột vào được.
+                - Các lĩnh vực:<br>
+                + Sau đó, thêm các khu vực có thể nhấp vào.
+                + Vùng có thể nhấp được xác định bằng cách sử dụng một phần tử<code style="color:crimson;">&lt;area&gt;</code>.
+                + Hình dạng:<br>
+                Bạn phải xác định hình dạng của vùng có thể nhấp và bạn có thể chọn một trong các giá trị sau:<br>
+                 rect- xác định một vùng hình chữ nhật<br>
+                 circle- xác định vùng hình tròn<br>
+                 poly- xác định một vùng đa giác<br>
+                 default- xác định toàn bộ khu vực<br>
+                Bạn cũng phải xác định một số tọa độ để có thể đặt vùng có thể nhấp vào hình ảnh. <br>
+                * Phần tử <code style="color:crimson;">&lt;picture&gt;</code>  trong HTML:<br>
+                - Phần tử HTML <code style="color:crimson;">&lt;picture&gt;</code> giúp các nhà phát triển web linh hoạt hơn trong việc chỉ định tài nguyên hình ảnh.<br>
+                - Phần <code style="color:crimson;">&lt;picture&gt;</code> tử chứa một hoặc nhiều phần tử <code style="color:crimson;">&lt;source&gt;</code> , mỗi phần tử đề cập đến các hình ảnh khác nhau thông qua thuộc tính srcset. Bằng cách này, trình duyệt có thể chọn hình ảnh phù hợp nhất với chế độ xem và/hoặc thiết bị hiện tại.<br>
+                - Mỗi phần tử <code style="color:crimson;">&lt;source&gt;</code> có một thuộc tính media giúp xác định thời điểm hình ảnh phù hợp nhất.<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 092522.png" alt="EROR" style="width:750px;height:300px;"><br>
+                - Khi nào nên sử dụng Picture Element:<br>
+                Có hai mục đích chính cho phần tử <code style="color:crimson;">&lt;picture&gt;</code> này:<br>
+                1. Băng thông<br>
+                Nếu bạn có màn hình hoặc thiết bị nhỏ thì không cần thiết phải tải tệp hình ảnh lớn. Trình duyệt sẽ sử dụng <source> phần tử đầu tiên có giá trị thuộc tính phù hợp và bỏ qua bất kỳ phần tử nào sau đây.<br>               
+                2. Hỗ trợ định dạng<br>
+                Một số trình duyệt hoặc thiết bị có thể không hỗ trợ tất cả các định dạng hình ảnh. Bằng cách sử dụng <picture>phần tử này, bạn có thể thêm hình ảnh ở tất cả các định dạng và trình duyệt sẽ sử dụng định dạng đầu tiên mà nó nhận ra và bỏ qua bất kỳ phần tử nào sau đây.<br>
+            </p>
+        <b><li>HTML Favicon:</li></b>
+            <p>* Hình ảnh favicon được hiển thị ở bên trái tiêu đề trang trong tab trình duyệt, như sau:<br>
+                <img src="https://www.w3schools.com/html/img_favicon.png" alt="EROR"><br>
+                - Để thêm biểu tượng yêu thích vào trang web của bạn, hãy lưu hình ảnh biểu tượng yêu thích của bạn vào thư mục gốc của máy chủ web hoặc tạo một thư mục trong thư mục gốc có tên là hình ảnh và lưu hình ảnh biểu tượng yêu thích của bạn vào thư mục này. Tên phổ biến cho hình ảnh favicon là "favicon.ico".<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 095154.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 095346.png" alt="EROR" style="width:750px;height:200px;"><br>
+            </p>
+        <b><li>HTML Page Title:</li></b> 
+            <p>* Mỗi trang web phải có tiêu đề trang để mô tả ý nghĩa của trang đó.<br>
+                Phần tử <code style="color:crimson;">&lt;title&gt;</code> thêm tiêu đề vào trang của bạn. Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 095154.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 095346.png" alt="EROR" style="width:750px;height:200px;"><br>
+               * Tiêu đề phải mô tả được nội dung và ý nghĩa của trang.<br>
+                Tiêu đề trang rất quan trọng để tối ưu hóa công cụ tìm kiếm (SEO). Văn bản được thuật toán của công cụ tìm kiếm sử dụng để quyết định thứ tự khi liệt kê các trang trong kết quả tìm kiếm.<br>
+                Phần tử <code style="color:crimson;">&lt;title&gt;</code>:<br>
+                + Xác định tiêu đề trên thanh công cụ của trình duyệt.<br>
+                + Cung cấp tiêu đề cho trang khi nó được thêm vào mục yêu thích.<br>
+                + Hiển thị tiêu đề cho trang trong kết quả của công cụ tìm kiếm.<br>
+            </p>
+        <b><li>HTML Tables:</li></b>
+            <p>* Bảng HTML cho phép các nhà phát triển web sắp xếp dữ liệu thành hàng và cột:<br>
+                 - Một bảng trong HTML bao gồm các ô bảng bên trong các hàng và cột. Ví dụ:<br>
+                 <img src="../File Ảnh/Screenshot 2023-11-26 110419.png" alt="EROR"><br>
+                 Kết quả:<br>
+                 <img src="../File Ảnh/Screenshot (336).png" alt="EROR" style="width:800px;height:500px;"><br>
+                 Giải thích:<br>
+                 + Mỗi ô của bảng được xác định bởi một thẻ <code style="color:crimson;">&lt;td&gt;</code> và một thẻ <code style="color:crimson;">&lt;/td&gt;</code>. td là viết tắt của dữ liệu bảng.Mọi thứ ở giữa <code style="color:crimson;">&lt;td&gt;</code> và <code style="color:crimson;">&lt;/td&gt;</code> là nội dung của ô bảng.<br>
+                 Lưu ý: Một ô bảng có thể chứa tất cả các loại thành phần HTML: văn bản, hình ảnh, danh sách, liên kết, các bảng khác, v.v.<br>
+                 + Mỗi hàng của bảng bắt đầu bằng một thẻ <code style="color:crimson;">&lt;tr&gt;</code> và kết thúc bằng một thẻ <code style="color:crimson;">&lt;/tr&gt;</code>(tr là viết tắt của hàng bảng). Bạn có thể có bao nhiêu hàng tùy thích trong một bảng; chỉ cần đảm bảo rằng số lượng ô trong mỗi hàng giống nhau.<br>
+                 Lưu ý: Đôi khi một hàng có thể có ít hoặc nhiều ô hơn hàng khác.<br>
+                 + Đôi khi bạn muốn các ô của mình là ô tiêu đề bảng. Trong những trường hợp đó, hãy sử dụng thẻ <code style="color:crimson;">&lt;th&gt;</code> thay vì thẻ <code style="color:crimson;">&lt;td&gt;</code> (th là viết tắt của tiêu đề bảng). Theo mặc định, văn bản trong <code style="color:crimson;">&lt;th&gt;</code> các thành phần được in đậm và căn giữa nhưng bạn có thể thay đổi điều đó bằng CSS.<br>
+                * Đường viền của bảng:<br>
+                - Cách để thêm đường viền cho bảng, ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 110419.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (336).png" alt="EROR" style="width:800px;height:500px;"><br>
+                - Cách làm cho đường viền của bảng thu gọn thành 1 thay vì sử dụng đường viền kép, ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 112254.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (337).png" alt="EROR" style="width:800px;height:500px;"><br>
+                * Thay đổi màu nền cho các ô trong bảng:<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 112754.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (338).png" alt="EROR" style="width:800px;height:500px;"><br>
+                * Tạo đường viền tròn cho bảng:<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 113146.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (339).png" alt="EROR" style="width:800px;height:500px;"><br>
+                - Bỏ qua đường viền xung quanh bảng bằng cách thoát table khỏi bộ chọn css, ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 113537.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (340).png" alt="EROR" style="width:800px;height:500px;"><br>
+                * Thay đổi kiểu cho đường viền trong bảng:<br>
+                - Với thuộc tính border-style này, bạn có thể thiết lập giao diện của đường viền. Có các giá trị được sau được cho phép sử dụng:<br>
+                + dotted - Nét chấm <br>      
+                + dashed - Nét đứt<br>   
+                + solid  - Nét liền<br>   
+                + double - Nhân đôi nét liền<br>
+                + groove - Đường nét rãnh<br>
+                + ridge  - Đường nét nổi<br>
+                + inset  - Đường nét chìm</map><br>
+                + outset - Đường nét nổi<br>
+                + none   - Không có đường nét<br>
+                + hidden - Đường nét bị ẩn<br>
+                Ví dụ cho boder mang giá trị là dotted:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 113959.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (341).png" alt="EROR" style="width:800px;height:500px;"><br>
+                * Thay đổi màu viền:<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 123057.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (343).png" alt="EROR" style="width:800px;height:500px;"><br>
+                * Thay đổi kích cỡ hàng, kích cỡ cột thông qua thuộc tính width và height:<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 125257.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (344).png" alt="EROR" style="width:800px;height:500px;"><br>
+                * Đệm ô và khoảng cách ô trong ô:<br>
+                - Đệm ô:<br>
+                + Đệm ô là khoảng cách giữa các cạnh ô và nội dung ô.<br>
+                + Theo mặc định, phần đệm được đặt thành 0.<br>
+                + Để thêm phần đệm vào các ô của bảng, hãy sử dụng thuộc tính padding trong CSS:<br>
+                Để chỉ thêm phần đệm phía trên nội dung, hãy sử dụng thuộc tính padding-top. Và các vế còn lại có thuộc tính padding-bottom, padding-left, và padding-right.<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 131316.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (345).png" alt="EROR" style="width:800px;height:500px;"><br> 
+                * Trải dài cột và trải dài hàng:<br>
+                - Để tạo một ô trải dài trên nhiều cột, hãy sử dụng thuộc tính colspan. Giá trị của colspanthuộc tính biểu thị số cột cần mở rộng.<br>
+                - Để tạo một ô trải dài trên nhiều hàng, hãy sử dụng thuộc tính rowspan. Giá trị của rowspanthuộc tính biểu thị số lượng hàng cần kéo dài.<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 132020.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (346).png" alt="EROR" style="width:800px;height:500px;"><br> 
+                * Tạo kiểu bảng HTML:<br>
+                VD:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 132625.png" alt="EROR" style="width:800px;height:300px;"><br>
+                * Nhóm màu trong bảng HTML:<br>
+                - Nếu bạn muốn tạo kiểu cho hai cột đầu tiên của bảng, hãy sử dụng các phần tử <code style="color:crimson;">&lt;colgroup&gt;</code> và <code style="color:crimson;">&lt;col&gt;</code>.<br>
+                - Phần tử <code style="color:crimson;">&lt;colgroup&gt;</code> nên được sử dụng làm nơi chứa các thông số kỹ thuật của cột.<br>
+                - Mỗi nhóm được chỉ định bằng một phần tử <code style="color:crimson;">&lt;col&gt;</code>.<br>
+                - Thuộc tính span chỉ định số lượng cột có kiểu.<br>
+                - Thuộc tính stylechỉ định kiểu cho các cột.<br>
+                VD:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 133500.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (347).png" alt="EROR" style="width:800px;height:500px;"><br>
+                - Ẩn cột:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 133737.png" alt="EROR"><br>
+            </p>
+        <b><li>HTML Lists:</li></b>
+                <p>
+                * Danh sách HTML không có thứ tự:<br>
+                - Danh sách không có thứ tự bắt đầu bằng thẻ <code style="color:crimson;">&lt;ul&gt;</code>. Mỗi mục danh sách bắt đầu bằng thẻ <code style="color:crimson;">&lt;li&gt;</code>.<br>
+                - Các mục trong danh sách sẽ được đánh dấu bằng dấu đầu dòng (vòng tròn nhỏ màu đen) theo mặc định.<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 135006.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (348).png" alt="EROR" style="width:800px;height:500px;"><br>
+                - Ta cũng có thể đổi kiểu đánh dấu danh sách thông qua thuộc tính list-style-type trong CSS:<br>
+                - Sau đây là một vài kiểu đánh dấu có trong thuộc tính list-style-type trong CSS:<br>
+                + Disc	: Kiểu mặc định<br>
+                + Circle : Gạch đầu dòng hình tròn.<br>
+                + Square : Gạch đầu dòng hình vuông.<br>
+                + None : Không có gạch đầu dòng.<br>
+                Ví dụ cho gạch đầu dòng hình vuông:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 135149.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (349).png" alt="EROR" style="width:800px;height:500px;"><br>
+                * Danh sách có thứ tự:<br>
+                - Một danh sách có thứ tự bắt đầu bằng thẻ <code style="color:crimson;">&lt;ol&gt;</code>. Mỗi mục danh sách bắt đầu bằng thẻ <code style="color:crimson;">&lt;li&gt;</code>. Các mục trong danh sách sẽ được đánh dấu bằng số theo mặc định.<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 140326.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (350).png" alt="EROR" style="width:800px;height:500px;"><br>
+                - Cũng giống như danh sách không có thứ tự ta cũng có thể thay đổi cách đánh thứ tự trong danh sách thứ tự thông qua thuộc tính <code style="color:crimson;">&lt;type&gt;</code>.<br>
+                - Sau đây là một số cách đánh thứ tự trong thuộc tính type:<br>
+                    + Type="1": Các mục trong danh sách sẽ được đánh số bằng số (mặc định).<br>
+                    + Type="A": Các mục trong danh sách sẽ được đánh số bằng chữ in hoa.<br>
+                    + Type="a": Các mục trong danh sách sẽ được đánh số bằng chữ cái viết thường.<br>
+                    + Type="I": Các mục trong danh sách sẽ được đánh số bằng số La Mã viết hoa.<br>
+                    + Type="i": Các mục trong danh sách sẽ được đánh số bằng số La Mã viết thường.<br>
+                - Ví dụ: Thay đổi kiểu đánh thứ tự sang số La Mã viết hoa.<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 141050.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (351).png" alt="EROR" style="width:800px;height:500px;"><br>
+                - Ta cũng có thể thay đổi điểm bắt đầu của đánh thứ tự trong danh sách có thứ tự thông qua thuộc tính start, ví dụ cho việc đánh số bắt đầu bằng 50 bằng số La Mã viết hoa:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 141512.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (352).png" alt="EROR" style="width:800px;height:500px;"><br>
+                </p>
+                * Danh sách mô tả:<br>
+                - Danh sách mô tả là danh sách các thuật ngữ, kèm theo mô tả cho từng thuật ngữ.<br>
+                - Thẻ <code style="color:crimson;">&lt;dl&gt;</code> xác định danh sách mô tả, thẻ xác định thuật ngữ (tên) và thẻ mô tả từng thuật ngữ: <code style="color:crimson;">&lt;dt&gt;</code> <code style="color:crimson;">&lt;dd&gt;</code>.<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 142208.png" alt="EROR"><br>
+                Kết quả:<br>
+                <img src="../File Ảnh/Screenshot (353).png" alt="EROR" style="width:800px;height:500px;"><br>
+        <b><li>HTML Block and Inline Elements:</li></b>
+                <p>
+                * Các phần tử cấp khối:<br>
+                - Phần tử cấp khối luôn bắt đầu trên một dòng mới và trình duyệt sẽ tự động thêm một số khoảng trắng (lề) trước và sau phần tử.<br>
+                - Phần tử cấp khối luôn chiếm toàn bộ chiều rộng có sẵn (kéo dài sang trái và phải hết mức có thể).<br>
+                - Hai phần tử cấp khối thường được sử dụng là: <code style="color:crimson;">&lt;p&gt;</code> và <code style="color:crimson;">&lt;div&gt;</code>.<br>
+                  + Phần tử <code style="color:crimson;">&lt;p&gt;</code> xác định một đoạn văn trong tài liệu HTML.<br>
+                  + Phần tử <code style="color:crimson;">&lt;div&gt;</code> xác định một bộ phận hoặc một phần trong tài liệu HTML.<br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 142925.png" alt="EROR" style="width:900px"><br>
+                - Một số phần tử cấp khối khác:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 143056.png" alt="EROR"><br>
+                * Các phần tử nội tuyến:<br>
+                - Phần tử nội tuyến không bắt đầu trên một dòng mới. Phần tử nội tuyến chỉ chiếm nhiều chiều rộng nếu cần thiết. <br>
+                Ví dụ:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 143341.png" alt="EROR" style="width:900px"><br>
+                - Một số phần tử nội tuyến khác:<br>
+                <img src="../File Ảnh/Screenshot 2023-11-26 143522.png" alt="EROR"><br>
+                * Phần tử <code style="color:crimson;">&lt;div&gt;</code>:<br>
+                - Phần tử <code style="color:crimson;">&lt;div&gt;</code> thường được sử dụng làm vùng chứa cho các phần tử HTML khác.<br>
+                - Phần tử <code style="color:crimson;">&lt;div&gt;</code> không có thuộc tính bắt buộc nhưng style, class và id là phổ biến.<br>
+                - Khi được sử dụng cùng với CSS, phần tử <code style="color:crimson;">&lt;div&gt;</code> có thể được sử dụng để tạo kiểu cho các khối nội dung.<br>
+                * Phần tử <code style="color:crimson;">&lt;span&gt;</code>:<br>
+                - Phần tử <code style="color:crimson;">&lt;span&gt;</code> là một vùng chứa nội tuyến được sử dụng để đánh dấu một phần của văn bản hoặc một phần của tài liệu.<br>
+                - Phần tử <code style="color:crimson;">&lt;span&gt;</code> không có thuộc tính bắt buộc nhưng style, class và id là phổ biến.<br>
+                - Khi được sử dụng cùng với CSS, phần tử <code style="color:crimson;">&lt;span&gt;</code> có thể được sử dụng để tạo kiểu cho các phần của văn bản.<br>
+                </p>
+        </ol>
+    </body>
+</html>

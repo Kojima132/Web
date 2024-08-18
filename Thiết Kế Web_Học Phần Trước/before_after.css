@@ -1,0 +1,24 @@
+a.chu {
+    position: relative; 
+    font-family: segoe ui;
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+a.chu:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0%; /*ban đầu cho vào giữa*/
+    width:0%;/*dài rộng theo chữ*/
+    height:2px;
+    background-color: gold;
+    transition: 0.4s;
+    
+}
+a.chu:hover:after{
+width:100%;
+left:0;/*hover chuột vào dàn sang trái*/
+}
+
+

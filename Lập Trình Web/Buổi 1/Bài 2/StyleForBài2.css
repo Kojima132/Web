@@ -1,0 +1,43 @@
+table {
+    width: 30%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th{
+    font-weight:bold; 
+}
+
+#id_1{
+    width:15%;
+}
+
+#id_2{
+    text-align: left;
+}
+
+.slide { 
+    display: none; 
+}
+
+.active { 
+    display: table-row-group; 
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+button{
+    margin: 10px 10px 10px 10px;
+    min-width: 100px;
+    min-height: 30px;
+}

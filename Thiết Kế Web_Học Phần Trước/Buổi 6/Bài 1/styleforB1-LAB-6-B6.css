@@ -1,0 +1,41 @@
+*{
+    margin: auto;
+    padding:0;
+    color:black;
+}
+
+select {
+    width: 50px; 
+}
+
+h1{
+    margin-bottom: 20px;
+    color:#76376B;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    margin-top: 100px;
+    border: 2px solid #000000; /* Màu và độ dày của khung */
+    padding: 20px; 
+    padding-left: 40px;/* Khoảng cách giữa nội dung và khung */
+    width: 700px; /* Chiều rộng của form */
+    margin: 30 auto; /* Căn giữa form */
+    max-height: 100vh;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+
+#tl1,#tl2,#tl3{
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#khac{
+    height:30px;
+}

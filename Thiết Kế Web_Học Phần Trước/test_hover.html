@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bo{
+            width:300px;
+            height: 300px;
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            border: 1px solid black;
+        }
+        .con1{
+            width:100px;
+            height: 100px;
+            background-color: rgb(7, 44, 32);
+            position:absolute;
+            top:15px;
+            cursor: pointer;
+        }
+        .con2{
+            width:150px;
+            height: 150px;
+            position: absolute;
+            right:15px;
+            display: none;
+
+        }
+        .con1:hover .con2{
+            display: block !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="bo">
+        <div class="con1"></div>
+        <div class="con2">
+            <img src="zing.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width device-width, initial-scale:1.0">
+        <title>Bài số 3</title>
+        <link rel="icon" type="image/x-icon" href="../File Ảnh/favicon (1).ico">
+        <style>
+            .image-container {
+                display: flex;
+                flex-wrap: wrap; /* Cho phép các phần tử chuyển hàng khi không đủ không gian */
+            }
+ 
+            .image-container img {
+                width: calc(33.33% - 5px); /* 33.33% chiều rộng và margin để tạo khoảng cách giữa các ảnh */
+                height: auto;
+                margin: 0px; /* Khoảng cách giữa các ảnh */
+            }
+
+            *{
+                margin:0;
+                padding:0;
+                text-decoration: none;
+            }
+            .trove{
+                width:fit-content;
+                position: fixed;
+                transform: translateY(-50%);
+                right: 0;
+            }
+
+            .trove>a{
+                display: block;
+                background-color: bisque;
+                padding: 10px;
+                margin-top: 10px;
+                color: black;
+            }
+            
+            .trove>a:hover{
+                background-color: rgb(248, 182, 101);
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="font-family:Lora; text-align:center;">FREE ANIME WALLPAPERS</h1>
+        <hr>
+        <div class="trove">
+            <a href="BaiTapLon-Trang Work.html"> Về trang WORK</a>
+            <a href="BaiTapLon-Trang Mô Phỏng B1.html"> Về trang mô phỏng</a>
+        </div>
+        <div class="image-container">
+            <div>
+                <img src="../File Ảnh/4K-Japanese-Wallpaper-High-Resolution - Copy.jpg" alt="Ảnh 1">
+                <img src="../File Ảnh/urban-serenity-anime-girl-and-child-on-a-city-balcony-ke-1920x1080 - Copy.jpg" alt="Ảnh 2">
+                <img src="../File Ảnh/cityscape-sky-anime-girl-peace-alone-4k-yg-1920x1080 - Copy.jpg" alt="Ảnh 3">
+            </div>          
+            <div>
+                <img src="../File Ảnh/anime-girls-original-characters-anime-miko-hair-accessories-hd-wallpaper-afc2a589c0ec4885189c4b014a6451f2 - Copy.jpg" alt="Ảnh 4" style="height:283px">
+                <img src="../File Ảnh/chainsaw-man-makima-and-denji-4k-to-1920x1080.jpg" alt="Ảnh 5">
+                <img src="../File Ảnh/anime-anime-girls-1978215-wallhere.com.jpg" alt="Ảnh 6" style="height:283px">
+            </div>    
+        </div>
+    </body>
+</html>

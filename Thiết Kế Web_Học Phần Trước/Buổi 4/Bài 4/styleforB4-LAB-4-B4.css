@@ -1,0 +1,308 @@
+*{
+    margin:auto;
+    padding:0;
+    color: #000;
+    text-decoration: none;
+}
+
+
+.div{
+    margin-top: 25px;
+    width: 97%;
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    top: 0;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+
+.ul{
+    list-style-type: none;
+    position: relative;
+    top: -20px;
+}
+
+.li{
+    margin-bottom: 10px;
+}
+
+
+a.chu{
+    position: relative; 
+    font-family: segoe ui;
+    text-decoration: none; 
+    font-size: 25pt;
+    color:white;
+}
+
+a.chu:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0%; /*ban đầu cho vào giữa*/
+    width:0%;/*dài rộng theo chữ*/
+    height:2px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+    
+}
+a.chu:hover:after{
+width:100%;
+   left:0;/*hover chuột vào dàn sang trái*/
+}
+
+
+.banquyen{
+    color:white;
+    font-size: 11pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a.banquyen, a.banquyen:visited{
+    color:white;
+    font-size: 11pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a.banquyen:hover{
+    color:#969696;
+}
+
+
+.icon, .icon:visited{
+    display: inline-block;
+    padding:5px 5px 5px 5px;
+    width: 17px;
+    height:17px;
+    background-color: white;
+    border-radius: 100%;
+    margin: auto;
+    transition: 0.4s;
+}
+.icon:hover{
+    background-color: #959191;
+}
+
+
+.khaungu{
+    width: fit-content;
+    margin-top: 150px;
+    margin-left:150px;
+    font-size: 45pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#id{
+    background-color: #000;
+    color:white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+.ul2{
+    list-style-type: none;
+    margin-top: 70px;
+    margin-left:150px;
+}
+
+
+.li2{
+    display: inline-block;
+    margin-right: 20px;
+    width: fit-content;
+}
+
+
+
+
+a.chu2{
+    position: relative; 
+    font-family: segoe ui;
+    text-decoration: none; 
+    font-size: 12pt;
+    color:rgb(0, 0, 0);
+}
+
+a.chu2:after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0%; /*ban đầu cho vào giữa*/
+    width:0%;/*dài rộng theo chữ*/
+    height:2px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.4s;
+    
+}
+a.chu2:hover:after{
+width:100%;
+   left:0;/*hover chuột vào dàn sang trái*/
+}
+
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: flex-start;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+.column {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+  
+.column img {
+    margin-top: 30px;
+    vertical-align: middle;
+}
+
+
+
+
+.bo, .lop1, .lop3,.lop5{
+    width:355px;
+    height:250px;
+}
+.bo{
+    position: relative;
+    overflow: hidden;
+}
+.bo .lop1{
+    top:0;
+    left:0;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.bo .lop2{
+    opacity:0;
+    position: absolute;
+    top:47px;
+    left:15px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+    width: 92%;
+    height: 75%;
+ }
+.bo:hover .lop2{
+    opacity: 0.9;
+}
+.bo .lop3{
+    position: absolute;
+    top: 90px;
+    left: 55px;
+    color: white;
+    font-size: 30px;
+    opacity:0;
+    transition: 0.4s;
+}
+.bo:hover .lop3{
+    opacity: 1;
+}
+
+
+.bo .lop4{
+    position: absolute;
+    top: 170px;
+    left: 55px;
+    font-size: 14pt;
+    opacity:0;
+    transition: 0.4s;
+}
+.bo:hover .lop4{
+    opacity: 1;
+}
+
+
+.bo .lop5{
+    top:0;
+    left:0;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.chuvafontchu{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14pt;
+}
+
+
+.bo2, .lop1a, .lop3a,.lop5a{
+    width:355px;
+    height:500px;
+}
+.bo2{
+    position: relative;
+    overflow: hidden;
+}
+.bo2 .lop1a{
+    top:0;
+    left:0;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.bo2 .lop2a{
+    opacity:0;
+    position: absolute;
+    top:166px;
+    left:15px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.4s;
+    width: 92%;
+    height: 65%;
+ }
+.bo2:hover .lop2a{
+    opacity: 0.9;
+}
+.bo2 .lop3a{
+    position: absolute;
+    top: 205px;
+    left: 55px;
+    color: white;
+    font-size: 30px;
+    opacity:0;
+    transition: 0.4s;
+}
+.bo2:hover .lop3a{
+    opacity: 1;
+}
+
+
+.bo2 .lop4a{
+    position: absolute;
+    top: 405px;
+    left: 55px;
+    font-size: 14pt;
+    opacity:0;
+    transition: 0.4s;
+}
+.bo2:hover .lop4a{
+    opacity: 1;
+}
+
+
+.bo2 .lop5a{
+    top:0;
+    left:0;
+    position: absolute;
+    transition: 0.4s;
+}
+

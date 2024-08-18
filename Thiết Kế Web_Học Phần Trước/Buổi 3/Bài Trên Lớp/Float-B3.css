@@ -1,0 +1,38 @@
+.floatcontainer{
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.header{
+    margin:auto;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.body1{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 7px;
+    margin-bottom:7px;
+}
+
+.col{
+    background-color: brown;
+    width:33%;
+    height:550px;
+    text-align:center ;
+}
+
+.footer{
+    margin:auto;
+    background-color:aqua;
+    text-align: center; 
+}
+
+.body1:after {
+    content: "";
+    clear: both;
+    display: table;
+  }

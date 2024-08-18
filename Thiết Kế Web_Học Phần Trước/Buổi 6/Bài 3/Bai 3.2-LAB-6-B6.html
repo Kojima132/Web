@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleforB3.2-LAB-6-B6.css">
+    <link rel="icon" type="image/x-icon" href="../File Ảnh/favicon (1).ico">
+    <script type="text/javascript" src="jsforB3.2-LAB-6-B6.js"></script>
+    <title>Calculator</title>
+    <style>
+
+       .trove{
+           width:fit-content;
+           position: fixed;
+           transform: translateY(-50%);
+           right: 0;
+       }
+
+       .trove>a{
+           display: block;
+           background-color: bisque;
+           padding: 10px;
+           margin-top: 10px;
+           color: black;
+           text-decoration: none;
+       }
+       
+       .trove>a:hover{
+           background-color: rgb(248, 182, 101);
+       }
+
+   </style>
+</head>
+<body>
+    <h1>Các phép toán:</h1>
+    <p>Phép cộng <input type="number" id="num1" size="40"> + <input type="number" id="num2" size="40"> <button onclick="tong();hienthiphepcong();">=</button> <input type="text" id="resultInput" readonly size="40"/></p>
+    <p>Phép trừ  <input type="number" id="num3" size="40"> - <input type="number" id="num4" size="40"> <button onclick="tru();hienthipheptru();">=</button>  <input type="text" id="resultInput2" readonly size="40"/></p>
+    <p>Phép nhân <input type="number" id="num5" size="40"> * <input type="number" id="num6" size="40"> <button onclick="nhan();hienthiphepnhan();">=</button> <input type="text" id="resultInput3" readonly size="40"></p>
+    <p>Phép chia <input type="number" id="num7" size="40"> / <input type="number" id="num8" size="40"> <button onclick="chia();hienthiphepchia();">=</button> <input type="text" id="resultInput4" readonly size="40"></p>
+    <h1>Các phép toán vừa thực hiện:</h1>
+    <div class="div">
+        <div>PHÉP CỘNG<br>
+            <p id="numa" style="display: inline-block;">? </p><span> + </span><p id="numb" style="display: inline-block;"> ? </p><span> = </span><p id="kq" style="display: inline-block;">?</p>
+        </div>
+        <div>PHÉP TRỪ<br>
+            <p id="numa2" style="display: inline-block;">? </p><span> - </span><p id="numb2" style="display: inline-block;"> ? </p><span> = </span><p id="kq2" style="display: inline-block;">?</p>
+        </div>
+        <div>PHÉP NHÂN<br>
+            <p id="numa3" style="display: inline-block;">? </p><span> * </span><p id="numb4" style="display: inline-block;"> ? </p><span> = </span><p id="kq3" style="display: inline-block;">?</p>
+        </div>
+        <div style="color:red;">PHÉP CHIA<br>
+            <p id="numa5" style="display: inline-block;">? </p><span> / </span><p id="numb6" style="display: inline-block;"> ? </p><span> = </span><p id="kq4" style="display: inline-block;">?</p>
+        </div>
+    </div>
+    <div class="trove">
+        <a href="BaiTapLon-Trang Work.html"> Về trang WORK</a>
+        <a href="BaiTapLon-Trang Mô Phỏng B1.html"> Về trang mô phỏng</a>
+    </div>
+</body>
+</html>

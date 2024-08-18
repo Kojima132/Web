@@ -1,0 +1,76 @@
+h2 {
+    display: flex;
+    color: #86A3C2;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+.div {
+    display: flex;
+    align-items: center; 
+    width:fit-content;
+
+}
+
+
+.div > div:first-child {
+    flex: 1; 
+    text-align: left; 
+    padding-right: 5px; 
+
+    
+}
+
+p{
+    min-width:80px;
+}
+
+.div > div:last-child input {
+    flex: 2; 
+    align-items: left; 
+}
+
+
+#id_1{
+    color: #AE5E36;
+    font-weight: bold;
+}
+
+
+#sothunhat_label,#sothuhai_label{
+    color:#1140FF;
+    font-weight: bold;
+}
+
+form {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+
+
+button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    background-color: #86A3C2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #68809a;
+}

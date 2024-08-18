@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.navbar {
+    overflow: hidden;
+    padding-left: 10px; 
+    transition: 0.4s;
+    position: fixed;
+    width: calc(100% - 10px); 
+    top: 0;
+    z-index: 99;
+  }
+  
+  .navbar a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 12px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 15pt; 
+    line-height: 25px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 0.5s;
+  }
+  
+
+  
+  .navbar #anhlogo {
+    width: 40px;
+    border-radius: 10%;
+    transition: 0.4s;
+  }
+
+  .navbar a:hover {
+    color:#58fff4;
+  }
+  
+  .navbar a.active {
+    color:#58fff4;
+    border-bottom: 3px solid #58fff4 ;
+    padding-bottom: 10px;
+  }
+
+  .navbar .icon {
+    display: none;
+  }
+  
+  .navbar-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 599px) {
+    .navbar {
+      padding: 0px 0px !important;
+      width:103%; 
+      margin-left: -10px;
+    }
+    .navbar a{
+      float: none;
+      display: none;
+      text-align: left;
+    }
+    .navbar-right {
+      float: none;
+    }
+
+    .navbar .icon {
+      display: block;
+      float: right;
+      position: relative;
+      top:0px;
+      right:2px;
+      background-color: black;
+
+    }
+
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {
+      position: relative;
+      background-color: black;
+    }
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      background-color: black;
+      text-align: left;
+    }
+  }
+main{
+    padding-top: 120px;
+    background-image: url('File ảnh/misty-dark-forest-background-desktop-wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+
+
+
+a.chu {
+  position: relative; 
+  font-family: segoe ui;
+  text-decoration: none; 
+  font-size: 20px;
+}
+
+a.chu:after{
+  content:'';
+  position: absolute;
+  bottom:0;
+  left:50%;
+  width:0%;
+  height:2px;
+  background-color: #58fff4;
+  transition: 0.4s;
+  
+}
+a.chu:hover:after{
+width:100%;
+left:0;
+}
+
+.flex-container{
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.flex-container>div,form{
+  width:50%;
+}
+
+
+
+.flex-container>div>p{
+  font-size: 12pt;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  margin-top: 5px;
+}
+
+form{
+    border: 3px solid white;
+    width: 400px;
+    height: auto;
+    margin: auto;
+     
+}
+
+form>div{
+  padding:20px;
+  width: 80%;
+  margin: auto;
+}
+
+div>input:not(:last-child){
+  width: 100%;
+  height: 25px;
+}
+
+
+#says{
+  height:100px;
+}
+
+div>p{
+  font-size: 11pt;
+  font-family: Arial, Helvetica, sans-serif;
+  color:white;
+  margin-top: 10px;
+}
+
+div>input:last-child{
+  margin-top: 15px;
+  padding:5px;
+  background-color: azure;
+  text-transform: uppercase;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+
+.cacicon{
+  margin-top: 15px;
+  width: max-content;
+  height: auto;
+}
+
+.cacicon>a{
+  color:white;
+  font-size: 20pt;
+  margin-left: 5px;
+  transition: 1s;
+  padding:7px 7px 7px 7px;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.cacicon>a:hover{
+  color:rgb(140, 240, 232);
+}
+
+
+#sodienthoai{
+  font-size: 20pt;
+}
+
+
+h1{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 25px;
+  color:white;
+}
+
+
+#loinoi{
+  width: 400px;
+  text-align: justify;
+  color:white;
+  margin-top: 10px;
+  margin-left:290px;
+  font-size: 12pt;
+}
+
+
+
+/* Responsive for phone */
+@media only screen and (max-width:600px) {
+  .navbar a {
+    font-size: 9pt;
+  }
+  #loinoi{
+    margin: auto;
+    margin-top: 10px;
+    font-size: 9pt;
+    width: 300px;
+  }
+  main{
+    background-image: none;
+    background-color: #0A2631;
+    height: 850px;
+    padding-top: 50px;
+    width: 100%;
+  }
+  .flex-container>div{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .flex-container>div>p{
+    font-size: 9pt;    
+  }
+  h1{
+    margin-top: 10px;
+  }
+
+  .cacicon>a{
+    font-size: 9pt;
+  }
+  #sodienthoai{
+    font-size: 14pt;
+  }
+}
+
+/* Responsive for tablets */
+@media only screen and (min-width: 601px) {
+  .navbar a {
+    font-size: 10pt;
+  }
+  #loinoi{
+    margin: auto;
+    margin-top: 10px;
+    font-size: 11pt;
+    width: 410px;
+  }
+  main{
+    background-image: none;
+    background-color: #0A2631;
+    height: 850px;
+    padding-top: 170px;
+    width: 100%;
+  }
+  .flex-container>div{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin: auto;
+  }
+  .flex-container>div>p{
+    font-size: 11pt;   
+    margin-left: 70px;
+  }
+
+  .flex-container>div>p:first-child{
+    margin-top: 20px;
+  }
+
+  h1{
+    margin-top: 10px;
+  }
+
+  .cacicon>a{
+    font-size: 12pt;
+  }
+  .cacicon>a:first-child{
+    margin-left: 70px;
+  }
+  #sodienthoai{
+    font-size: 16pt;
+  }
+}
+
+/* Responsive for desktop */
+@media only screen and (min-width: 1024px) {
+  .navbar a {
+    font-size: 15pt; 
+  }
+
+  #loinoi{
+    width: 500px;
+    text-align: justify;
+    color:white;
+    margin-left:250px;
+    margin-top: 20px;
+    font-size: 12pt;
+  }
+
+  main{
+    background-image: url('File ảnh/misty-dark-forest-background-desktop-wallpaper.jpg');
+    height: 100vh;
+    padding-top: 120px;
+  }
+
+  .flex-container{
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+  }
+
+  .flex-container>div,form{
+    width: 50%;
+  }
+
+  .flex-container>div{
+    margin-top: -10px;
+  }
+  .flex-container>div>p{
+    font-size: 12pt;    
+  }
+  h1{
+    margin-top: 25px;
+  }
+
+  .cacicon>a{
+    font-size: 20pt;
+  }
+  #sodienthoai{
+    font-size: 20pt;
+  }
+
+}
+
+
+  

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <title>Fullscreen Popup Without JavaScript</title>
+    <style>
+        #popup-trigger {
+            display: none;
+        }
+
+        #popup-label {
+            cursor: pointer;
+            padding: 10px;
+            color: #000000;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        #popup-trigger:checked ~ #popup {
+            display: flex;
+        }
+
+        #popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7); /* Màu nền với độ trong suốt */
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #popup-content {
+            background-color: #fff;
+            padding: 20px;
+            min-width: 80%; /* Độ rộng tối đa của nội dung popup */
+            text-align: center;
+        }
+
+        #close-popup {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="popup-trigger">
+    <label for="popup-trigger" id="popup-label"><i class="fas fa-bars" style="font-size: 14pt;color:black"></i></label>
+
+    <div id="popup">
+        <div id="popup-content">
+            <label for="popup-trigger" id="close-popup">Close Popup</label>
+            <p>This is a fullscreen popup content.</p>
+            <p>You can add any content here.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.flex-container{
+    width:100px;
+    height:100px;
+    margin:auto;
+    line-height: 90px;
+    text-align: center;
+    font-size: 14pt;
+    margin-bottom: 10px;
+
+}
+
+#color1{
+    margin-top: 80px;
+    background-color: red;
+}
+
+#color2{
+    background-color: blue;
+}
+#color3{
+    background-color:green;
+}
+
+li{ 
+    
+    margin:auto;
+    color:#0000FF;
+}

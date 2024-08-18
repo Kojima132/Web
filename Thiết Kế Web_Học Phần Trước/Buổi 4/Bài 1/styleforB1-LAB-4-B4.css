@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.divttlh{
+    background-color: #21252B;
+    height: 38px;
+    width: 100%;
+}
+
+.customicon{
+    position: relative;
+    font-size: 24pt;
+    margin: auto;
+    padding-bottom:-5px;
+    padding-top: -10px;
+    transform: translateY(-3px);
+    left: -1px;
+    color: #0DC0C0;
+}
+
+.divchuaicon{
+    background-color: white;
+    width:27px;
+    height:25px;
+    border-radius: 12%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top:-2px;
+}
+
+.container > div{
+    margin:5px;
+    transform: translateX(115px);
+}
+
+
+.thongtinlienhe{
+    opacity: 0.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.thongtinlienhe2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #CCCCD5;
+    font-weight: 550;
+}
+
+.email{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #0db0b0;
+    
+}
+
+.email:hover{
+    color: #04798C;
+}
+
+#id{
+    margin-left: 300px;
+}
+
+.ul{
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transform: translateX(1120px);
+    top:-45px;
+}
+
+.li{
+    float: left;
+    border-right:1px solid #2E343A;
+}
+#active{
+    border-left:1px solid #2E343A;
+}
+.li, .a {
+    
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 7px;
+    text-decoration: none;
+  }
+
+.li:hover,.a:hover{
+    background-color: #1CA2DA;
+}
+
+.li2{
+    float: left;
+    border-right:1px solid #2E343A;
+}
+
+.li2, .a2{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 7px;
+    text-decoration: none;
+  }
+
+.li2:hover,.a2:hover{
+    background-color: #395793;
+}
+
+.li3{
+    float: left;
+    border-right:1px solid #2E343A;
+}
+
+.li3, .a3{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 7px;
+    text-decoration: none;
+  }
+
+.li3:hover,.a3:hover{
+    background-color: #CE4B81;
+}
+
+
+.divchuamenudacap{
+    background-color: rgb(255, 255, 255);
+    height: 90px;
+    position: -webkit-sticky;
+    position: sticky;
+    top:-1px;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.divchuaaura{
+    width: fit-content;
+    height: fit-content;
+}
+
+.aura{
+    width:95px;
+    height:96px;
+}
+
+#id2{
+    transform: translateX(120px);
+}
+
+.ul2{
+    list-style-type: none;
+    margin: 0;
+    padding: 35px;
+    transform: translateX(345px);
+}
+
+
+.li5{
+    float: left;
+    border-bottom:4px solid #0DC0C0;
+}
+
+.li5,.a5,.a5:visited .dropbtn{
+    height:50px;
+    display: inline-block;
+    color: #0DC0C0;
+    text-align: center;
+    transform:translateY(3px);
+    padding:-1px 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+.li5:hover,.a5:hover, .dropbtn:hover .dropbtn{
+    color: #0DC0C0;
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.i>i{
+    font-size:9pt;
+}
+
+
+
+.i:hover> i {
+    transform: rotate(270deg);
+    transition: 0.5s;
+    color:#0dc0c0; 
+}
+
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #21262C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content2{
+    display: none;
+    position: absolute;
+    background-color: #21262C;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: #757B80;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content2 a{
+    color: #757B80;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #21262C;
+    color:#0DC0C0;
+}
+
+.dropdown-content2 a:hover {
+    background-color: #21262C;
+    color:#0DC0C0;
+}
+
+.li5.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.li5.dropdown:hover .dropdown-content2 {
+    display: flex;
+}
+
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #2E343A;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px 15px;
+    color: #757B80;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #21262C;
+    color: #0DC0C0;
+}
+
+
+.dropdown-content2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-content2 li {
+    border-bottom: 1px solid #2E343A;
+}
+
+.dropdown-content2 a {
+    display: block;
+    padding: 10px 15px;
+    color: #c3c9d0;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+.dropdown-content2 a:hover {
+    background-color: #272B32;
+    color: #0DC0C0;
+}
+
+.nav>li{
+    float: left;
+    margin-right: 15px;
+}
+  
+.nav>li>a{
+    color: #0DC0C0;
+    width: 100px;
+}
+  
+.nav li{
+    position: relative;
+    list-style:none;
+}
+  
+.nav li a {
+    padding-bottom: 5px;
+    display: block;
+    padding-top: 5px;
+}
+
+.nav .sub-menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    background-color: #21262C;
+    padding: 15px 20px;
+    border-bottom: 1px solid #2E343A;
+    color:#0DC0C0;
+    
+}
+  
+.nav li:hover>.sub-menu{
+    display: block;
+}
+  
+.nav>li>.sub-menu{
+    top: 20px;
+    left: 0;
+}
+
+
+.classa, .classa:visited{
+    color:#757B80;
+}
+
+.classa:hover{
+    color:#0DC0C0;
+}
+
+.noidungchinh{
+    background-image: url('https://aurum.nikadevs.com/img_external/revolution-slider/back-8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height:520px;
+    overflow: hidden;
+}
+
+
+p{  
+    width: max-content;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 200px;
+}
+
+#p1{
+    font-size: 24pt;
+    transform: translateY(150px);
+    background-color: #FAF9F6;
+    font-weight: bold;
+    padding:10px 10px 10px 10px;
+}
+
+#p2{
+    font-size: 13pt;
+    transform: translateY(170px);
+    background-color: rgba(0,0,0,0.7);
+    color:white;
+    padding:15px 15px 15px 15px;
+}
+
+.ourservice,.ourservice:visited {
+    text-decoration: none;
+    font-size: 12pt;
+    padding:10px 15px 10px 15px;
+    background-color: #0DC0C0;
+    position: relative;
+    top:-350px;
+    margin-left: 200px;
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.ourservice:hover{
+    background-color: #0cacac;
+}
+
+.imghand{
+    position: relative;
+    left: 370px;
+    top:-75px;
+}
+
+.imgboy{
+    position: relative;
+    left: -125px;
+    top:-300px;
+}
+
+
+.footer{
+    background-color: #20242A;
+    width: 100%;
+    height:150px;
+}
+
+#p3{
+    font-size: 20pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #ffff;
+    transform: translateY(40px);
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+
+#p4{
+    font-size: 12pt;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #858D91;
+    transform: translateY(35px);
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+
+
+.GetaFreeQuote,.GetaFreeQuote:visited {
+    text-decoration: none;
+    font-size: 12pt;
+    padding:10px 15px 10px 15px;
+    background-color: #0DC0C0;
+    position: relative;
+    top:-20px;
+    left:1150px;
+    color:white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.GetaFreeQuote:hover{
+    background-color: #0cacac;
+}

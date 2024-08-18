@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon (1).ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styleforBaiTapLon-Contact-.css">
+    <script type="text/javascript" src="jsforBaiTapLon-Contact-.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <div class="navbar" id="myTopnav">
+            <a href="#default" id="logo"><img src="File ảnh/136c3eee40ebbbebc2745b45ad077380.jpg" id="anhlogo"></a>
+            <div class="navbar-right">
+              <a class="chu" href="BaiTapLon-Trang Home.html">HOME</a>
+              <a href="BaiTapLon-Trang Work.html" class="chu">MY WORK</a>
+              <a href="BaiTapLon-Trang About.html" class="chu">ABOUT ME</a>
+              <a href="BaiTapLon-Trang Service.html" class="chu">SERVICE</a>
+              <a href="BaiTapLon-Trang Contact.html"class="active">CONTACT ME</a>
+              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+    </header>
+    <main>  
+        <h1>CONTACT ME</h1>
+        <p id="loinoi">Nếu bạn đang muốn tìm đến các dịch vụ của tôi thì xin hãy điền biểu mẫu phía dưới. Tôi luôn mong ngóng thông tin từ bạn. Chúc bạn có một ngày tốt lành!</p>
+        <div class="flex-container">
+            <form action="" onsubmit="validate();">
+                <div>
+                    <p>Tên của bạn:</p>
+                    <input type="text" id="name" placeholder="Tên của bạn ...">
+                    <p id="ph1" style="color:crimson;"></p>
+                    <p>Email:</p>
+                    <input type="text" id="email" placeholder="Email của bạn...">
+                    <p id="ph2" style="color:crimson;"></p>
+                    <p>Số điện thoại:</p>
+                    <input type="text" id="sđt" placeholder="Số điện thoại của bạn ...">
+                    <p id="ph3" style="color:crimson;"></p>
+                    <p>Những điều mà bạn muốn nói:</p>
+                    <input type="text" id="says" placeholder="Hãy nói gì đó..."><br>
+                    <input type="button" value="SEND IT" onclick="validate();"/>
+                </div>
+            </form>
+            <div>
+                <p>Một số lưu ý nho nhỏ:</p>
+                <p>
+                - Hãy điền đầy đủ thông tin của bạn trước khi ấn SUBMIT.<br>
+                - Ô "Những điều mà bạn muốn nói" bạn có thể bỏ qua nếu muốn.<br>
+                - Hãy luôn lịch sự nhé!<br>
+                </p>
+                <p>Bạn cũng có thể liên lạc tới tôi thông qua số này:</p>
+                <p id="sodienthoai">0123456789</p>
+                <p>Bạn cũng có thể tìm tôi ở:</p>
+                <div class="cacicon">
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+<script>scrollFunction();myFunction();</script>
+</html>

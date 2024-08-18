@@ -1,0 +1,34 @@
+table,th ,td {
+    border:2px solid black;
+    border-collapse: collapse;
+}
+th,td,tr{
+    width:200px;
+}
+tr:nth-child(even) {
+    background-color: #DDDDDD;
+  }
+#th{
+    background-color: #04AA6D;
+    color:white;
+}
+
+tr:hover{
+    background-color: #ddd;
+}
+
+.flex-container{
+    display: wrap;
+    flex-wrap: nowrap;
+    width:350px;
+    height:210px;
+    margin-left: 10px;
+    opacity: 0.5;
+}
+.flex-container:hover{
+    width:350px;
+    height:210px;
+    margin-left:10px;
+    opacity: 1.0;
+}
+
