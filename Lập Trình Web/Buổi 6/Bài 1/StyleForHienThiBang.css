@@ -1,0 +1,10 @@
+table ,td{
+    border: 1px solid black;
+}
+
+th{
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid black;
+    width: calc(max-content+30%);
+}
